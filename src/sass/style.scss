@@ -25,7 +25,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "bootstrap/custom_bootstrap";
 @import "wpstyles/wordpress-core";
 
-.site-main {
+.wrapper {
 	@extend .container;
 }
 
