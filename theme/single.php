@@ -13,10 +13,6 @@ $context         = Timber::context();
 $timber_post     = Timber::query_post();
 $context['post'] = $timber_post;
 
-if(get_post_type($timber_post->ID) == 'ctci_doc') {
-	$context['docmeta'] = get_post_meta($timber_post->ID, '_ctci_doc_file_pdf_slug', true); 
-}
-
 
 if ( post_password_required( $timber_post->ID ) ) {
 	Timber::render( 'single-password.twig', $context );
