@@ -1,0 +1,54 @@
+{
+  "name": "ctci-twig",
+  "version": "0.0.1",
+  "description": "Twig Based theme",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod",
+    "init": "gulp init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timber/starter-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timber/starter-theme/issues"
+  },
+  "homepage": "https://github.com/timber/starter-theme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "@wordpress/scripts": "^9.0.0",
+    "autoprefixer": "^9.8.5",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "dir-archiver": "^1.1.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.2",
+    "node-sass": "^4.14.0",
+    "rtlcss": "^2.5.0",
+    "stylelint-config-twbs-bootstrap": "^2.0.3",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "pdfjs": "^2.3.9",
+    "popper": "^1.0.1"
+  }
+}

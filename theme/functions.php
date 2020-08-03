@@ -8,6 +8,8 @@
  * @since   Timber 0.1
  */
 
+define('CTCI_VERSION', '0.0.1');
+
 /**
  * If you are installing Timber as a Composer dependency in your theme, you'll need this block
  * to load your dependencies and initialize Timber. If you are using Timber via the WordPress.org
@@ -57,7 +59,7 @@ Timber::$autoescape = false;
  * We're going to configure our theme inside of a subclass of Timber\Site
  * You can move this to its own file and include here via php's include("MySite.php")
  */
-class StarterSite extends Timber\Site {
+class CTCISite extends Timber\Site {
 	/** Add timber support. */
 	public function __construct() {
 		add_action( 'after_setup_theme', array( $this, 'theme_supports' ) );
@@ -65,6 +67,7 @@ class StarterSite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'wp_enqueue_scripts', array($this, 'enqueue_scripts'));
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -143,6 +146,11 @@ class StarterSite extends Timber\Site {
 		add_theme_support( 'menus' );
 	}
 
+	public function enqueue_scripts() {
+		wp_enqueue_style( 'ctci', get_bloginfo('template_url') . '/../dist/css/style.css', array(), CTCI_VERSION, 'screen' );
+		wp_enqueue_script( 'ctcijs', get_bloginfo('template_url') . '/../dist/js/bundle.js', array(), CTCI_VERSION, false);
+	}
+
 	/** This Would return 'foo bar!'.
 	 *
 	 * @param string $text being 'foo', then returned 'foo bar!'.
@@ -164,4 +172,4 @@ class StarterSite extends Timber\Site {
 
 }
 
-new StarterSite();
+new CTCISite();
