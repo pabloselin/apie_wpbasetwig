@@ -1,21 +1,50 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
-		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
-			<img src="{{ post.thumbnail.src|resize(1200, 300) }}">
-			<section class="article-content">
+<div class="content-wrapper">
+	<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+		<img src="{{ post.thumbnail.src|resize(1200, 300) }}">
+		<section class="article-content">
+			<header class="document-header">
 				<h1 class="article-h1">Documento: {{ post.title }}</h1>
 				<a href="{{ post.link }}">{{ _e('edit') }}</a>
+			</header>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="document-meta">
+						{% include 'partial/docdata.twig' with {data: docmeta} %}
+
+						<div class="docauthor">
+							{% for term in post.terms( {query: {taxonomy: 'docauthor'}}) %}
+							<a class="tag" href="{{term.link}}">{{term}}</a>
+							{% endfor %}
+						</div>
+
+						<div class="doctype">
+							{% for term in post.terms( {query: {taxonomy: 'doctype'}}) %}
+							<a class="tag" href="{{term.link}}">{{term}}</a>
+							{% endfor %}
+						</div>
+
+						<div class="tags">
+							{% for term in post.terms( {query: {taxonomy: 'post_tag'}}) %}
+							<a class="tag" href="{{term.link}}">{{term}}</a>
+							{% endfor %}
+						</div>
+					</div>		
+				</div>
 				
-				<div class="document-meta">
-					{% include 'partial/docdata.twig' with {data: docmeta} %}
+				<div class="col-md-8">
+					{% include 'partial/docviewer.twig' with {data: docmeta} %}
 				</div>
 
-				<div class="article-body">
-					{{post.content}}
-				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
+			</div>
+
+			<div class="article-body">
+				{{post.content}}
+			</div>
+		</section>
+	</article>
+</div><!-- /content-wrapper -->
 {% endblock %}

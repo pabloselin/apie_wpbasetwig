@@ -14,7 +14,8 @@ $timber_post     = Timber::query_post();
 $context['post'] = $timber_post;
 
 if(get_post_type($timber_post->ID) == 'ctci_doc') {
-	$context['docmeta'] = get_post_meta($timber_post->ID, '_ctci_doc_file_pdf_slug', true); 
+	$context['docmeta'] = ctci_output_fields($timber_post->ID);
+	//var_dump($context['docmeta']);
 }
 
 
