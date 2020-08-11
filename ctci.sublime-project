@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer"
+		},
+		{
+			"path": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search"
+		},
+		{
+			"path": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content"
+		}
+	]
+}
