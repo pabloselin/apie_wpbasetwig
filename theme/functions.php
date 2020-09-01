@@ -67,6 +67,7 @@ class CTCISite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'wp_head', array( $this, 'add_to_head') );
 		add_action( 'wp_enqueue_scripts', array($this, 'enqueue_scripts'));
 		parent::__construct();
 	}
@@ -149,14 +150,14 @@ class CTCISite extends Timber\Site {
 		wp_enqueue_script( 'ctcijs', get_bloginfo('template_url') . '/../dist/js/bundle.js', array(), CTCI_VERSION, false);
 	}
 
-	/** This Would return 'foo bar!'.
-	 *
-	 * @param string $text being 'foo', then returned 'foo bar!'.
-	 */
-	public function myfoo( $text ) {
-		$text .= ' bar!';
-		return $text;
+	public function add_to_head() {
+		?>
+
+		<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap');</style>
+
+		<?php 
 	}
+
 
 	/** This is where you can add your own functions to twig.
 	 *

@@ -1,0 +1,44 @@
+.searchButton {
+	background-color: #777;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	margin: 12px 0;
+}
+
+.searchInfo {
+	font-size: 72px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: white;
+	text-align: left;
+	line-height: 1.2em;
+}
+
+.SearchField {
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid white;
+	input[type="text"] {
+		margin-right: 12px;
+		padding: 12px;
+		font-size: 24px;
+		min-width: 300px;
+	}
+}
+
+.SearchZone {
+	text-align: right;
+	padding: 24px;
+	margin-bottom: 24px;
+	background-color: #ccc;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0 0 6px #777;
+}
+
+.TaxBrowser {
+	padding: 36px;
+	background-color: #777;
+	color: white;
+}

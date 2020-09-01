@@ -26,17 +26,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "wpstyles/wordpress-core";
 
 .wrapper {
-	@extend .container;
+	//@extend .container;
 }
 
-header.site-header {
+header.header {
 	width: 100%;
-	background-color: #333;
+	background-color: white;
 	color: white;
-
-	.site-branding {
-		@extend .container;
-	}
+	height: 120px;
 }
 
 .debugversion {
@@ -47,3 +44,8 @@ header.site-header {
 	font-size: 9px;
 	padding: 4px;
 }
+
+// React components get styled here
+
+@import "components/Search";
+@import "components/DocItem";
