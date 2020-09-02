@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"_ctci_doc",
+				"_ctci_doc_year"
+			],
+			[
+				"_ctci",
+				"_ctci_doc_month"
+			],
+			[
 				"wp_enq",
 				"wp_enqueue_script"
 			],
@@ -44,194 +52,17 @@
 	"buffers":
 	[
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 			"settings":
 			{
-				"buffer_size": 3437,
-				"encoding": "UTF-8",
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/sass/bootstrap/_custom_bootstrap_variables.scss",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/phploy.ini",
 			"settings":
 			{
-				"buffer_size": 48457,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/style.scss",
-			"settings":
-			{
-				"buffer_size": 1210,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/components/Search.scss",
-			"settings":
-			{
-				"buffer_size": 683,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": ".searchButton {"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-			"settings":
-			{
-				"buffer_size": 1126,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "theme/functions.php",
-			"settings":
-			{
-				"buffer_size": 4714,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/base.twig",
-			"settings":
-			{
-				"buffer_size": 1235,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-			"settings":
-			{
-				"buffer_size": 1194,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "import {render, Component } from \"@wordpress/eleme"
-			}
-		},
-		{
-			"file": "views/single-ctci_doc.twig",
-			"settings":
-			{
-				"buffer_size": 1323,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-			"settings":
-			{
-				"buffer_size": 2751,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-			"settings":
-			{
-				"buffer_size": 976,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/YearField.js",
-			"settings":
-			{
-				"buffer_size": 1171,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/DayField.js",
-			"settings":
-			{
-				"buffer_size": 1195,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/package.json",
-			"settings":
-			{
-				"buffer_size": 538,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/MonthField.js",
-			"settings":
-			{
-				"buffer_size": 1508,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_content.php",
-			"settings":
-			{
-				"buffer_size": 1300,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/index.js",
-			"settings":
-			{
-				"buffer_size": 1633,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_taxonomies.php",
-			"settings":
-			{
-				"buffer_size": 10587,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  🎉 Emmet just updated to v2.0.0! 🎉\n  \n  The Emmet plugin just got better:\n  \n  * Features completely new developer experience: displays interactive abbreviation preview and plays nice with Tab key and native Sublime Text snippets.\n  * New version is many times faster that previous one.\n  * Improved JSX and CSS support.\n  * Rewritten from scratch and doesn’t use heavy PyV8 binary anymore.\n  \n  Read more about new version: https://teletype.in/@chikuyonok/emmet2-sublime-text\n  \n  And if you like Emmet, please support it’s further development 😇:\n  https://github.com/sponsors/emmetio\n",
-			"settings":
-			{
-				"buffer_size": 651,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-			"settings":
-			{
-				"buffer_size": 853,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "import {render, Component} from \"@wordpress/elemen"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_posts.php",
-			"settings":
-			{
-				"buffer_size": 3083,
-				"encoding": "UTF-8",
+				"buffer_size": 660,
 				"line_ending": "Unix"
 			}
 		}
@@ -248,12 +79,20 @@
 		"selected_items":
 		[
 			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
 				"prett",
 				"JsPrettier: Format Code"
 			],
 			[
-				"bab",
+				"bba",
 				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"rena",
+				"Rename File"
 			],
 			[
 				"babe",
@@ -400,34 +239,48 @@
 	},
 	"expanded_folders":
 	[
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content"
 	],
 	"file_history":
 	[
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/single.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocMeta.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/MonthField.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_taxonomies.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_content.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/DayField.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/YearField.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap_variables.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/Search.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/.gitignore",
 		"/home/pablo/Local Sites/c80/app/public/wp-config.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/index.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/phploy.ini",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/phploy.ini",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap_variables.scss",
 		"/home/pablo/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
 		"/tmp/fz3temp-2/wp-config 2.php",
 		"/tmp/fz3temp-2/wp-config.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
 		"/home/pablo/.local/share/applications/blender.desktop",
 		"/home/pablo/.local/share/applications/postman.desktop",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single.twig",
 		"/home/pablo/.bashrc",
 		"/home/pablo/.zshrc",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/phploy.ini",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/home.twig",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap.scss",
 		"/home/pablo/.config/sublime-text-3/Packages/User/GutterColor.sublime-settings",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
 		"/home/pablo/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
 		"/home/pablo/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
 		"/home/pablo/Local Sites/luciaegana/app/public/wp-content/themes/ler/inc/template-functions.php",
@@ -462,7 +315,7 @@
 	],
 	"find":
 	{
-		"height": 51.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -476,6 +329,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"terms",
+			"this.props.",
+			"docarea",
+			"TermList",
+			"TermItem",
+			"StyledDocItem",
 			"\";\n",
 			"info",
 			"$border-radius",
@@ -509,668 +368,15 @@
 	"groups":
 	[
 		{
-			"selected": 15,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								941,
-								941
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/sass/bootstrap/_custom_bootstrap_variables.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 48457,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5747,
-								5747
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2760.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/sass/style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1210,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								914,
-								914
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/sass/components/Search.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"auto_name": ".searchButton {",
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1091,
-								1091
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "theme/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4714,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2163,
-								2163
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 474.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/base.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1194,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								552,
-								552
-							]
-						],
-						"settings":
-						{
-							"auto_name": "import {render, Component } from \"@wordpress/eleme",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 84.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "views/single-ctci_doc.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1485,
-								1485
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 976,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								444,
-								444
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/YearField.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								219,
-								219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/DayField.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/package.json",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 538,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								264,
-								264
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/MonthField.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								640,
-								640
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_content.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1300,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								429,
-								429
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_taxonomies.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10587,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4118,
-								4118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 810.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 651,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								651,
-								651
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"auto_name": "import {render, Component} from \"@wordpress/elemen",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1226,
-								1226
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				}
-			]
-		},
-		{
 			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 14,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/MonthField.js",
+					"buffer": 0,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								722,
-								722
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_posts.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3083,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1183,14 +389,41 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/phploy.ini",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/INI/INI.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1213,18 +446,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1251,6 +477,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"single",
+				"ctci-twig/views/single-ctci_doc.twig"
+			],
+			[
+				"docit",
+				"ctci_search/src/DocItem.js"
+			],
 			[
 				"day",
 				"ctci_custom_content/src/fields/DayField.js"
@@ -1316,16 +550,8 @@
 				"ctci_search/src/Results.js"
 			],
 			[
-				"single",
-				"ctci-twig/views/single-ctci_doc.twig"
-			],
-			[
 				"singl",
 				"ctci-twig/views/single.twig"
-			],
-			[
-				"docit",
-				"ctci_search/src/DocItem.js"
 			],
 			[
 				"phpl",
@@ -1473,16 +699,16 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "luc",
+		"last_filter": "cede",
 		"selected_items":
 		[
 			[
-				"luc",
-				"~/Local Sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
-			],
-			[
 				"cede",
 				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
+			],
+			[
+				"luc",
+				"~/Local Sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
 			],
 			[
 				"c80",
