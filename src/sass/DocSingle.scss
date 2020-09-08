@@ -1,0 +1,25 @@
+.docinfozone {
+	padding: 24px;
+	border-radius: 10px;
+	border: 1px solid #333;
+}
+
+.document-meta {
+	span.label {
+		font-weight: bold;
+	}
+
+	.doctermlist {
+		a {
+			color: #333;
+			text-decoration: none;
+		}
+	}
+}
+
+.document-header {
+	h1 {
+		font-size: 28px;
+		font-style: italic;
+	}
+}

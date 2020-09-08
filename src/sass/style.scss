@@ -45,7 +45,11 @@ header.header {
 	padding: 4px;
 }
 
+//Singles
+@import "DocSingle";
+
 // React components get styled here
 
 @import "components/Search";
 @import "components/DocItem";
+@import "components/DocViewer";
