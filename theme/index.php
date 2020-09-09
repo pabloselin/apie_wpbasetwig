@@ -16,6 +16,8 @@
 $context          = Timber::context();
 $context['posts'] = new Timber\PostQuery();
 $templates        = array( 'index.twig' );
+
+//var_dump(ctcisearch_minmaxyears());
 if ( is_home() ) {
 	array_unshift( $templates, 'front-page.twig', 'home.twig' );
 }

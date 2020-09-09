@@ -89,7 +89,7 @@ class CTCISite extends Timber\Site {
 		$context['site']  = $this;
 		$context['version'] = CTCI_VERSION;
 		$context['is_front_page'] = is_front_page();
-		$context['is_logged_in'] = is_user_logged_in();
+		$context['is_logged_in'] = is_user_logged_in() || SCRIPT_DEBUG;
 		return $context;
 	}
 
