@@ -12,6 +12,10 @@ import browserSync from "browser-sync";
 import replace from "gulp-replace";
 import zip from "gulp-zip";
 import info from "./package.json";
+import setTitle from "node-bash-title";
+
+setTitle('🖍 CTCI Theme');
+
 
 const PRODUCTION = yargs.argv.prod;
 

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"ctcisearch_yea",
+				"ctcisearch_yearquery"
+			],
+			[
+				"ctcisearch_pre",
+				"ctcisearch_prepareitems"
+			],
+			[
+				"wp_get_attachment_thu",
+				"wp_get_attachment_thumb_url"
+			],
+			[
+				"WP_Rest",
+				"WP_REST_Request"
+			],
+			[
+				"updateYear",
+				"updateYearStart"
+			],
+			[
+				"ctcisearch_",
+				"ctcisearch_minmaxyears"
+			],
+			[
+				"ARRAY",
+				"ARRAY_N"
+			],
+			[
 				"_ctci_doc",
 				"_ctci_doc_year"
 			],
@@ -52,91 +80,72 @@
 	"buffers":
 	[
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 			"settings":
 			{
-				"buffer_size": 1515,
+				"buffer_size": 5775,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/single-ctci_doc.twig",
-			"settings":
-			{
-				"buffer_size": 2272,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/partial/docdata.twig",
-			"settings":
-			{
-				"buffer_size": 208,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/components/DocItem.scss",
-			"settings":
-			{
-				"buffer_size": 482,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/DocSingle.scss",
-			"settings":
-			{
-				"buffer_size": 281,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-			"settings":
-			{
-				"buffer_size": 1489,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n/**\n * Plugin Name:       Buscador de documentos para CTCI\n * Plugin URI:        https://apie.cl\n * Description:       Buscador de documentos (Frontend) para CTCI basado en React y usando la REST API de WP\n * Version:           0.0.1\n * Author:            A Pie\n * Author URI:        https://apie.cl\n * License:           GPL v2 or later\n * License URI:       https://www.gnu.org/licenses/gpl-2.0.html\n * Text Domain:       ctci\n */\n\ndefine('CTCISEARCH_VERSION', '0.1');\n\nfunction ctcisearch_enqueue_scripts() {\n\t//global $post;\t\n\twp_enqueue_script( 'ctci_search', plugin_dir_url( __FILE__ ) . 'build/index.js', ['wp-element', 'wp-api-fetch'], time(), true);\n\twp_localize_script( 'ctci_search', 'searchendpoints', ctcisearch_endpoints() );\n}\n\nadd_action( 'wp_enqueue_scripts', 'ctcisearch_enqueue_scripts');\n\nfunction ctcisearch_endpoints() {\n\n\n    $taxonomies = array('docarea', 'docpilar', 'doctype');\n\n    $taxendpoints = [];\n\n    foreach($taxonomies as $taxonomy) {\n        $args = array(\n                    'taxonomy' => $taxonomy\n                );\n        $taxendpoints[] = array(\n                                        'labels'        => get_taxonomy_labels( get_taxonomy($taxonomy )),\n                                        'endpoint'      => get_bloginfo('url') . '/wp-json/wp/v2/' . $taxonomy,\n                                        'terms'         => get_terms($args),\n                                        'name'          => $taxonomy \n                                    );\n    }\n\n\t$endpoints = array(\n\t\t'default'                   => get_bloginfo('url') . '/wp-json/wp/v2/ctci_doc?_embed&search=',\n        'taxonomies'                => get_bloginfo('url') . '/wp-json/wp/v2/taxonomies',\n        'taxonomy_base'             => get_bloginfo('url') . '/wp-json/wp/v2/ctci_doc?',\n        'taxonomies_endpoints'      => $taxendpoints,\n        'sitename'                  => get_bloginfo('name'),\n        'siteurl'                   => get_bloginfo('url')\n\t);\n\n\treturn $endpoints;\n}\n\nadd_action('rest_api_init', 'ctcisearch_register_rest_images' );\n\n// From: https://medium.com/@dalenguyen/how-to-get-featured-image-from-wordpress-rest-api-5e023b9896c6\n\nfunction ctcisearch_register_rest_images(){\n    \n    register_rest_field( array('ctci_doc'),\n        'fimg_url',\n        array(\n            'get_callback'    => 'ctcisearch_get_rest_featured_image',\n            'update_callback' => null,\n            'schema'          => null,\n        )\n    );\n\n    register_rest_field( array('ctci_doc'),\n        'termlist',\n        array(\n            'get_callback'    => 'ctcisearch_get_rest_termslist',\n            'update_callback' => null,\n            'schema'          => null,\n        )\n    );\n}\n\nfunction ctcisearch_get_rest_featured_image( $object, $field_name, $request ) {\n    if( $object['featured_media'] ){\n        $img = wp_get_attachment_image_src( $object['featured_media'], 'app-thumb' );\n        return $img[0];\n    }\n    return false;\n}\n\nfunction ctcisearch_get_rest_termslist( $object, $field_name, $request ) {\n    $taxonomies = get_object_taxonomies( 'ctci_doc' );\n    $taxlist = [];\n    foreach($taxonomies as $taxonomy) {\n        $taxlist[$taxonomy] = get_the_terms( $object['id'], $taxonomy );\n    }\n\n    return $taxlist;\n}\n\nfunction ctcisearch_custom_endpoints() {\n    register_rest_route('ctcisearch/v1/', '/year/(?P<yearrange>\\w+)', array(\n            'methods' => 'GET',\n            'callback' => 'ctcisearch_get_docs_by_year_range',\n            'args' => array(\n                    'yearrange' => array(\n                        'validate_callback' => function($param, $request, $key) {\n                            return sanitize_text_field( $param );\n                        }\n                    )\n                )\n            )\n        );\n}\n\nadd_action('rest_api_init', 'ctcisearch_custom_endpoints');\n\nfunction ctcisearch_get_docs_by_year_range( WP_REST_Request $request ) {\n    $yearrange = $request['yearrange'];\n    $yeararr = explode('_', $yearrange);\n    $items = ctcisearch_yearquery($yeararr);\n    return $items;\n}\n\nfunction ctcisearch_yearquery($years_range) {\n    $args = array(\n        'post_type' => 'ctci_doc',\n        'meta_query' => array(\n            array(\n                'key'       => '_ctci_doc_year',\n                'value'     => $years_range,\n                'compare'   => 'BETWEEN',\n                'type'      => 'NUMERIC'\n            )\n        )\n    );\n\n    $items = get_posts($args);\n\n    if($items) {\n        return $items;\n    } else {\n        return false;\n    }\n}\n\nfunction ctcisearch_minmaxyears() {\n    global $wpdb;\n\n    $query = $wpdb->\n}",
 			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-			"file_size": 4542,
-			"file_write_time": 132441347751869019,
 			"settings":
 			{
-				"buffer_size": 4621,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/base.twig",
-			"settings":
-			{
-				"buffer_size": 1398,
+				"buffer_size": 9708,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/package.json",
 			"settings":
 			{
-				"buffer_size": 2925,
+				"buffer_size": 773,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "theme/functions.php",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/webpack.config.js",
 			"settings":
 			{
-				"buffer_size": 4827,
+				"buffer_size": 242,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 179,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "const defaults = require(\"@wordpress/scripts/confi"
+			}
+		},
+		{
+			"file": "gulpfile.babel.js",
+			"settings":
+			{
+				"buffer_size": 2396,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+			"settings":
+			{
+				"buffer_size": 874,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -160,6 +169,22 @@
 			[
 				"rein",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"exp",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"pre",
+				"JsPrettier: Format Code"
+			],
+			[
+				"emm",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"com",
+				"Toggle Comment"
 			],
 			[
 				"ren",
@@ -194,16 +219,8 @@
 				"Set Syntax: JavaScript (Babel)"
 			],
 			[
-				"pre",
-				"JsPrettier: Format Code"
-			],
-			[
 				"pr",
 				"JsPrettier: Format Code"
-			],
-			[
-				"exp",
-				"Emmet: Expand Abbreviation"
 			],
 			[
 				"rprett",
@@ -327,26 +344,34 @@
 	"expanded_folders":
 	[
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/partial"
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src"
 	],
 	"file_history":
 	[
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/build/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_fields.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/Search.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/partial/docviewer.twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/partial/docdata.twig",
-		"/home/pablo/Desktop/download.svg",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/index.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/partial/docdata.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/DocSingle.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/Search.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/partial/docviewer.twig",
+		"/home/pablo/Desktop/download.svg",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/home.twig",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/single.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/DocSingle.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocViewer.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/index.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocMeta.js",
@@ -354,7 +379,6 @@
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/icons/chevron-left.svg",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/icons/plus.svg",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/icons/minus.svg",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
 		"/home/pablo/Desktop/innocomp.txt",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/utils/handleUpload.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/FileUpload.js",
@@ -362,8 +386,6 @@
 		"/tmp/fz3temp-2/www-error.log",
 		"/tmp/fz3temp-2/wp-config.php",
 		"/home/pablo/Desktop/Informe 2006 Consejo Nacional de Innovación para la Competitividad.md",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/MonthField.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_taxonomies.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/index.js",
@@ -435,6 +457,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"control",
 			"_ctci_doc_year",
 			"data",
 			"plataformadocume",
@@ -479,24 +502,24 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1515,
+						"buffer_size": 5775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								777,
-								777
+								2140,
+								2140
 							]
 						],
 						"settings":
@@ -505,119 +528,121 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "views/single-ctci_doc.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2272,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								618,
-								618
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "views/partial/docdata.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 208,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								137,
-								137
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/sass/components/DocItem.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 482,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								406,
-								406
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 765.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "src/sass/DocSingle.scss",
+					"buffer": 1,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 281,
+						"buffer_size": 9708,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								910,
+								910
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 68.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"auto_name": "const defaults = require(\"@wordpress/scripts/confi",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -628,19 +653,78 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+					"file": "gulpfile.babel.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1489,
+						"buffer_size": 2396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								837,
-								837
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Gulpfile).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1016,
+								1016
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
 							]
 						],
 						"settings":
@@ -652,123 +736,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4621,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4619,
-								4619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1440.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "views/base.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1241,
-								1241
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2925,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								459,
-								459
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "theme/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4827,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2855,
-								2855
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 840.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -822,6 +790,46 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"web",
+				"ctci_viewer/webpack.config.js"
+			],
+			[
+				"gulp",
+				"ctci-twig/gulpfile.babel.js"
+			],
+			[
+				"pack",
+				"ctci-twig/package.json"
+			],
+			[
+				"ctc",
+				"ctci_search/ctci_search.php"
+			],
+			[
+				"resut",
+				"ctci_search/src/Results.js"
+			],
+			[
+				"ctci",
+				"ctci_search/ctci_search.php"
+			],
+			[
+				"inde",
+				"ctci_search/src/index.js"
+			],
+			[
+				"index.j",
+				"ctci_viewer/build/index.js"
+			],
+			[
+				"ctciseainde",
+				"ctci_search/src/index.js"
+			],
+			[
+				"index.",
+				"ctci-twig/theme/index.php"
+			],
 			[
 				"func",
 				"ctci-twig/theme/functions.php"
@@ -889,10 +897,6 @@
 			[
 				"tax",
 				"ctci_search/src/TaxBrowser.js"
-			],
-			[
-				"inde",
-				"ctci_search/src/index.js"
 			],
 			[
 				"single",
@@ -1019,10 +1023,6 @@
 				"template-parts/item-eventos.php"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"itempro",
 				"template-parts/item-proyectos.php"
 			],
@@ -1077,10 +1077,6 @@
 			[
 				"packa",
 				"package.json"
-			],
-			[
-				"gulp",
-				"gulpfile.babel.js"
 			]
 		],
 		"width": 0.0
@@ -1088,9 +1084,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "c80",
 		"selected_items":
 		[
+			[
+				"c80",
+				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
+			],
+			[
+				"cede",
+				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
+			],
 			[
 				"",
 				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
@@ -1100,19 +1104,11 @@
 				"~/Local Sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[
-				"c80",
-				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
-			],
-			[
 				"c8",
 				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
 			],
 			[
 				"ced",
-				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
-			],
-			[
-				"cede",
 				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
 			],
 			[

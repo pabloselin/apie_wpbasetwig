@@ -3,6 +3,7 @@
 	border: 1px solid #777;
 	border-radius: 10px;
 	display: flex;
+	align-items: flex-start;
 	margin-bottom: 24px;
 	h1 {
 		font-weight: 600;
@@ -20,10 +21,12 @@
 
 	img, .placeholder {
 		//float: left;
-		margin-right: 12px;
+		margin-right: 24px;
 		background-color: #f0f0f0;
 		width: 200px;
 		height: auto;
+		flex-shrink: 0;
+		box-shadow: 0 1px 6px #ccc;
 	}
 
 	.docText {
