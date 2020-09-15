@@ -74,6 +74,11 @@ export const init = () => {
 		.pipe(dest("bundled"));
 };
 
+export const images = () => {
+	return src('src/img/*')
+			.pipe(dest("dist/img"))
+}
+
 const server = browserSync.create();
 export const serve = (done) => {
 	server.init({
@@ -101,6 +106,6 @@ export const dev = series(
 	serve,
 	watchForChanges
 );
-export const build = series(clean, parallel(styles, scripts));
+export const build = series(clean, parallel(styles, scripts, images));
 
 export default dev;
