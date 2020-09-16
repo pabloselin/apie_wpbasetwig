@@ -1,11 +1,12 @@
 .DocItem {
-	padding: 24px;
+	padding: 24px 24px 36px 24px;
 	border: 1px solid #777;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-start;
 	margin-bottom: 24px;
 	background-color: white;
+	position: relative;
 	h1 {
 		font-weight: 600;
 		font-size: 24px;
@@ -17,6 +18,33 @@
 	.DocMeta {
 		.date {
 			font-weight: 600;
+		}
+	}
+
+	.docText {
+
+	}
+
+	.docTerms {
+		position: absolute;
+		bottom: 12px;
+		left: 244px;
+		span {
+			display: inline-block;
+			//padding: 12px;
+			margin: 0 6px 0 0;
+			font-weight: 600;
+			&:after {
+				content: '|';
+				display: inline-block;
+				margin: 0 6px;
+			}
+		}
+
+		span:last-of-type {
+			&:after {
+				content: none;
+			}
 		}
 	}
 
