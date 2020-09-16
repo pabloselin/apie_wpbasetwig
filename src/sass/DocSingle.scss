@@ -2,6 +2,7 @@
 	padding: 24px;
 	border-radius: 10px;
 	border: 1px solid #333;
+	background-color: white;
 }
 
 .document-meta {
@@ -22,4 +23,9 @@
 		font-size: 28px;
 		font-style: italic;
 	}
+}
+
+section.article-content {
+	padding:24px;
+	background-color: rgba(255,255,255,0.7)
 }
