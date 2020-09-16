@@ -15,7 +15,6 @@ $context['post'] = $timber_post;
 
 if(get_post_type($timber_post->ID) == 'ctci_doc') {
 	$context['docmeta'] = ctci_output_fields($timber_post->ID);
-	//var_dump($context['docmeta']);
 }
 
 
