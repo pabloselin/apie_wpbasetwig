@@ -24,12 +24,29 @@
 	padding-bottom: 24px;
 	border-bottom: 1px solid #777;
 	input[type="text"] {
-		margin-right: 12px;
+		margin: 0 auto;
 		padding: 12px;
 		font-size: 24px;
 		min-width: 300px;
+		max-width: 600px;
 	}
 }
+
+select#yearStart,
+select#yearEnd {
+	max-width: 260px;
+	padding: 12px 24px 12px 12px;
+	height: auto;
+}
+
+
+.years-selects {
+	justify-content: center;
+	.col {
+		max-width: 200px;
+	}
+}
+
 
 .expanded .SearchField {
 	border-bottom: 0;
