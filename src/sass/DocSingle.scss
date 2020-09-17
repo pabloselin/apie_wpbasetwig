@@ -3,6 +3,14 @@
 	border-radius: 10px;
 	border: 1px solid #333;
 	background-color: white;
+
+	span.date {
+		font-weight: bold;
+	}
+
+	.article-body {
+		margin: 24px 0;
+	}
 }
 
 .document-meta {
@@ -26,6 +34,8 @@
 }
 
 section.article-content {
-	padding:24px;
-	background-color: rgba(255,255,255,0.7)
+	> .container {
+		padding:24px;
+		background-color: rgba(255,255,255,0.7)
+	}
 }

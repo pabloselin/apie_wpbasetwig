@@ -4,7 +4,7 @@
 	<div class="content-wrapper">
 		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
 			<section class="article-content">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
 							{% include 'partial/docviewer.twig' with {data: docmeta} %}
@@ -15,11 +15,22 @@
 								<header class="document-header">
 									<h1 class="article-h1">{{ post.title }}</h1>
 								</header>
+								
+								<span class="date">
+										{% if docmeta.doc_day %}
+										{{docmeta.doc_day}}/{{docmeta.doc_month}}/{{docmeta.doc_year}}
+										{% else %}
+										{{docmeta.doc_year}}
+										{% endif %}
+								</span>
+
+								<div class="article-body">
+									{{post.post_excerpt}}
+								</div>		
+
 								<div class="document-meta">
 									
-									<span class="label">
-										{{docmeta.doc_day}}/{{docmeta.doc_month}}/{{docmeta.doc_year}}
-									</span>
+									
 
 									<div class="docauthor doctermlist">
 										<span class="label">Autor/a: </span>
@@ -42,12 +53,10 @@
 										{% endfor %}
 									</div>
 								</div>
-								<div class="article-body">
-									{{post.content}}
-								</div>		
+								
 							</div>
 
-							<a class="btn btn-download btn-dark" href="{{docmeta.pdfurl}}"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-download' width='24' height='24' viewBox='0 0 24 24' stroke-width='3' stroke='%23607D8B' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' /%3E%3Cpolyline points='7 11 12 16 17 11' /%3E%3Cline x1='12' y1='4' x2='12' y2='16' /%3E%3C/svg%3E" alt="">Descarga</a>
+							<a class="btn btn-download btn-dark" href="{{docmeta.pdfurl}}">Descargar <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-download' width='24' height='24' viewBox='0 0 24 24' stroke-width='3' stroke='%23607D8B' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' /%3E%3Cpolyline points='7 11 12 16 17 11' /%3E%3Cline x1='12' y1='4' x2='12' y2='16' /%3E%3C/svg%3E" alt="Icono Descargar"></a>
 						</div>
 
 

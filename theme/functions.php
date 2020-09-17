@@ -8,7 +8,7 @@
  * @since   Timber 0.1
  */
 
-define('CTCI_VERSION', '0.1.2');
+define('CTCI_VERSION', '0.1.3');
 
 /**
  * If you are installing Timber as a Composer dependency in your theme, you'll need this block
