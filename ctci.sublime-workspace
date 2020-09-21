@@ -152,7 +152,7 @@
 			"file": "src/sass/components/Search.scss",
 			"settings":
 			{
-				"buffer_size": 2049,
+				"buffer_size": 2095,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -161,7 +161,7 @@
 			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 			"settings":
 			{
-				"buffer_size": 8680,
+				"buffer_size": 9020,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -192,6 +192,10 @@
 				"JsPrettier: Format Code"
 			],
 			[
+				"exp",
+				"Emmet: Expand Abbreviation"
+			],
+			[
 				"ww",
 				"Word Wrap: Toggle"
 			],
@@ -206,10 +210,6 @@
 			[
 				"rein",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"exp",
-				"Emmet: Expand Abbreviation"
 			],
 			[
 				"ren",
@@ -481,7 +481,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -496,6 +496,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"group",
 			"select",
 			"custom-select",
 			"custom",
@@ -555,7 +556,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -640,10 +641,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -739,15 +740,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2049,
+						"buffer_size": 2095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								597,
+								597
 							]
 						],
 						"settings":
@@ -759,7 +760,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -768,15 +769,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8680,
+						"buffer_size": 9020,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6212,
-								6212
+								8061,
+								8061
 							]
 						],
 						"settings":
@@ -785,10 +786,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3870.0,
+						"translation.y": 4193.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
