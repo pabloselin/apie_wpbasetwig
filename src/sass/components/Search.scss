@@ -2,12 +2,17 @@
 	padding: 0;
 }
 
-.searchButton {
+.searchButton,
+.cleanButton {
 	background-color: #777;
 	color: white;
 	border: 0;
 	padding: 12px 24px;
 	margin: 12px 0;
+}
+
+.cleanButton {
+	margin: 0;
 }
 
 .searchInfo {
@@ -20,29 +25,33 @@
 }
 
 .SearchField {
-	margin-bottom: 24px;
-	padding-bottom: 24px;
-	border-bottom: 1px solid #777;
 	input[type="text"] {
 		margin: 0 auto;
 		padding: 12px;
 		font-size: 24px;
-		min-width: 300px;
+		//min-width: 300px;
 		max-width: 600px;
+		border-radius: 15px;
 	}
 }
 
-select#yearStart,
-select#yearEnd {
-	max-width: 260px;
-	padding: 12px 24px 12px 12px;
-	height: auto;
+.expanded .SearchField {
+	.searchButton {
+		padding: 12px 36px;
+		min-width: 210px;
+	}
 }
 
+
+.yearTo {
+	margin:6px 0 0 20px;
+}
+
+
 .years-selects {
-	justify-content: center;
-	.col {
-		max-width: 200px;
+	text-align: left;
+	label {
+		color: #777;
 	}
 }
 
@@ -55,7 +64,6 @@ select#yearEnd {
 	padding: 24px;
 	margin-bottom: 0;
 	background-color: #ccc;
-	overflow: hidden;
 	text-align: center;
 }
 
@@ -70,8 +78,35 @@ select#yearEnd {
 		flex-direction: column;
 	}
 
-	.years-selects .col {
-		max-width: 100%;
+	.mainSearchInput {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: right;
+
+		.toggleLayout {
+			display: inline-block;
+			margin-top: 4px;
+			text-decoration: underline;
+			font-weight: 500;
+			cursor: pointer;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.years-selects {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+.mini .colsearchbutton,
+.mini .colclean {
+	text-align: right;
+	max-width: 160px;
+	button {
+		width: 100%;
 	}
 }
 
@@ -90,28 +125,48 @@ select#yearEnd {
 
 	.years-selects.form-row {
 		padding: 0;
+		margin-top: -24px;
 	}
 }
 
-.mini .TaxBrowser {
-	padding-top: 0;
+.TaxBrowserHome {
+	
+	margin-bottom: 120px;
 
-	h3 {
-		display: none;
+	.filterHomeSection {
+		padding: 36px;
+		background-color: #ccc;
+		color: #777;
+		margin-bottom: 24px;
 	}
-}
 
-.TaxBrowser {
-	padding: 36px;
-	background-color: #ccc;
-	color: #777;
-
-	h3 {
+	h3.taxTitle {
 		font-weight: 600;
 		text-align: center;
 		margin-bottom: 24px;
 	}
 }
+
+.TaxBrowser {
+	margin-top: 24px;
+	padding: 36px;
+	background-color: #ccc;
+	color: #777;
+	h3.numberResults {
+		font-size: 22px;
+		font-weight: 600;
+		text-align: left;
+		color: #333;
+		margin: 0;
+	}
+
+	label {
+		font-size: 14px;
+		color: #333;
+	}
+}
+
+
 
 .searchMainTitle {
 	font-size: 72px;
@@ -134,7 +189,7 @@ select#yearEnd {
 
 #ctci_search .mini {
 	.searchInfo {
-		font-size: 16px;
+		font-size: 36px;
 	}
 }
 
@@ -143,7 +198,7 @@ select#yearEnd {
 }
 
 h3.resultsTitle {
-	margin: 24px 0;
+	margin: 24px 0 0 0;
 }
 
 .loadingZone {
@@ -160,20 +215,32 @@ h3.resultsTitle {
 }
 
 .results.empty {
-	padding: 0;
-
-	h3.resultsTitle {
-		padding: 24px 24px 0 24px;
-		margin-top: 0;
-	}
-
-	p {
-		padding: 0 24px 24px 24px;
-		margin-bottom: 24px;
-	}
+	//padding: 0;
 
 	p:empty {
 		display: none;
+	}
+}
+
+.titleZone {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.resultsDetail {
+	padding: 0;
+	margin-bottom: 24px;
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+	.yearRange {
+		span {
+			display: inline-block;
+			padding: 0 3px;
+		}
 	}
 }
 

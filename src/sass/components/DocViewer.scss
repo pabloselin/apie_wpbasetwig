@@ -1,5 +1,12 @@
 //DocViewer
 
+a#backToSearch {
+	color: white;
+	font-size: 24px;
+	display: inline-block;
+	margin: 12px 0;
+}
+
 .ctciv_document {
 	max-width: 100%;
 	overflow: auto;

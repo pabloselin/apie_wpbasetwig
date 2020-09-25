@@ -23,10 +23,6 @@
 		<!-- logged in caution -->
 		{% if is_logged_in %}
 
-		{% if not is_front_page %}
-			<div id="ctci_search" data-layout="mini"></div>
-		{% endif %}
-
 		<section id="content" role="main" class="content-wrapper">
 			<div class="wrapper {{sidebar_class}}">
 				{% if title %}<h1>{{title}}</h1>{% endif %}
