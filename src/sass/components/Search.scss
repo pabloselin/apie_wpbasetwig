@@ -101,6 +101,12 @@
 	}
 }
 
+.mini .mainSearchInput {
+	@include respond-below(md) {
+			margin-bottom: 24px;
+		}
+}
+
 .mini .colsearchbutton,
 .mini .colclean {
 	text-align: right;
@@ -144,6 +150,9 @@
 		font-weight: 600;
 		text-align: center;
 		margin-bottom: 24px;
+		@include respond-below(md) {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -176,6 +185,9 @@
 	text-transform: uppercase;
 	max-width: 600px;
 	margin: 12px auto;
+	@include respond-below(xl) {
+		font-size: 46px;
+	}
 }
 
 .taxbrowserTitle {
@@ -185,11 +197,30 @@
 	font-size: 48px;
 	margin: 24px 0 48px 0;
 	font-weight: 600;
+	@include respond-below(xl) {
+		font-size: 32px;
+		margin:0 0 24px 0;
+	}
+	@include respond-below(md) {
+		font-size: 24px;
+		margin: 0 0 24px 0;
+	}
+}
+
+.taxColHome {
+	@include respond-below(md) {
+		margin-bottom: 24px;
+	}
 }
 
 #ctci_search .mini {
 	.searchInfo {
 		font-size: 36px;
+
+		@include respond-below(md) {
+			font-size: 24px;
+			text-align: center;
+		}
 	}
 }
 
@@ -212,6 +243,10 @@ h3.resultsTitle {
 	border: 0;
 	margin: 0;
 	box-shadow: inset 0px 2px 4px #333;
+	
+	@include respond-below(md) {
+		padding: 6px;
+	}
 }
 
 .results.empty {
@@ -242,6 +277,14 @@ h3.resultsTitle {
 			padding: 0 3px;
 		}
 	}
+
+	@include respond-below(md) {
+		margin-bottom: 0;
+	}
+}
+
+.resultsDetail:empty {
+	display: none;
 }
 
 .TaxBrowserHome {
@@ -254,4 +297,12 @@ h3.resultsTitle {
 
 .termdesc {
 	margin: 12px 0;
+}
+
+.toggleFilters {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+	cursor: pointer;
+	margin-bottom: 0;
 }

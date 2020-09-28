@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"SelectT",
+				"selectTheme.js"
+			],
+			[
+				"update",
+				"updateYearEnd"
+			],
+			[
+				"search",
+				"searchcontent"
+			],
+			[
+				"get_term_",
+				"get_term_field"
+			],
+			[
+				"s_",
+				"s_endyear"
+			],
+			[
+				"switch",
+				"switchTerm"
+			],
+			[
+				"s_doc",
+				"s_docpilar"
+			],
+			[
+				"s_do",
+				"s_doctema"
+			],
+			[
+				"buildSea",
+				"buildSearchUrl"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"ctcisearch_custom",
+				"ctcisearch_customterms_endpoint"
+			],
+			[
+				"get_nav_m",
+				"get_nav_menu_locations"
+			],
+			[
+				"get_nav_menu_o",
+				"wp_get_nav_menu_object"
+			],
+			[
 				"picked",
 				"picked_term"
 			],
@@ -108,10 +160,10 @@
 	"buffers":
 	[
 		{
-			"file": "node_modules/bootstrap/scss/_forms.scss",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
 			"settings":
 			{
-				"buffer_size": 9242,
+				"buffer_size": 768,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,25 +171,16 @@
 			"file": "views/single-ctci_doc.twig",
 			"settings":
 			{
-				"buffer_size": 2424,
+				"buffer_size": 2564,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "theme/functions.php",
+			"file": "src/js/bundle.js",
 			"settings":
 			{
-				"buffer_size": 4827,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/DocSingle.scss",
-			"settings":
-			{
-				"buffer_size": 490,
+				"buffer_size": 502,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -146,25 +189,53 @@
 			"file": "src/sass/components/DocViewer.scss",
 			"settings":
 			{
-				"buffer_size": 709,
+				"buffer_size": 803,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+			"file": "views/base.twig",
 			"settings":
 			{
-				"buffer_size": 1189,
+				"buffer_size": 1310,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/sass/components/DocItem.scss",
+			"file": "src/sass/style.scss",
 			"settings":
 			{
-				"buffer_size": 953,
+				"buffer_size": 1540,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.babel.js",
+			"settings":
+			{
+				"buffer_size": 2548,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+			"settings":
+			{
+				"buffer_size": 13260,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+			"settings":
+			{
+				"buffer_size": 11407,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -178,19 +249,65 @@
 			}
 		},
 		{
-			"file": "src/sass/components/Search.scss",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
 			"settings":
 			{
-				"buffer_size": 2424,
+				"buffer_size": 937,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
 			"settings":
 			{
-				"buffer_size": 10955,
+				"buffer_size": 1100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "theme/functions.php",
+			"settings":
+			{
+				"buffer_size": 4825,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+			"settings":
+			{
+				"buffer_size": 1258,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
+			"settings":
+			{
+				"buffer_size": 451,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".mini.container {\n\tpadding: 0;\n}\n\n.searchButton,\n.cleanButton {\n\tbackground-color: #777;\n\tcolor: white;\n\tborder: 0;\n\tpadding: 12px 24px;\n\tmargin: 12px 0;\n}\n\n.cleanButton {\n\tmargin: 0;\n}\n\n.searchInfo {\n\tfont-size: 72px;\n\tfont-weight: 800;\n\ttext-transform: uppercase;\n\tcolor: white;\n\ttext-align: left;\n\tline-height: 1.2em;\n}\n\n.SearchField {\n\tinput[type=\"text\"] {\n\t\tmargin: 0 auto;\n\t\tpadding: 12px;\n\t\tfont-size: 24px;\n\t\t//min-width: 300px;\n\t\tmax-width: 600px;\n\t\tborder-radius: 15px;\n\t}\n}\n\n.expanded .SearchField {\n\t.searchButton {\n\t\tpadding: 12px 36px;\n\t\tmin-width: 210px;\n\t}\n}\n\n\n.yearTo {\n\tmargin:6px 0 0 20px;\n}\n\n\n.years-selects {\n\ttext-align: left;\n\tlabel {\n\t\tcolor: #777;\n\t}\n}\n\n.expanded .SearchField {\n\tborder-bottom: 0;\n}\n\n.SearchZone {\n\ttext-align: right;\n\tpadding: 24px;\n\tmargin-bottom: 0;\n\tbackground-color: #ccc;\n\ttext-align: center;\n}\n\n.expanded {\n\t.SearchZone {\n\t\tbackground-color: transparent;\n\t\tbox-shadow: none;\n\t\tcolor: white;\n\t}\n\n\t.form-row {\n\t\tflex-direction: column;\n\t}\n\n\t.mainSearchInput {\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\ttext-align: right;\n\n\t\t.toggleLayout {\n\t\t\tdisplay: inline-block;\n\t\t\tmargin-top: 4px;\n\t\t\ttext-decoration: underline;\n\t\t\tfont-weight: 500;\n\t\t\tcursor: pointer;\n\t\t\t&:hover {\n\t\t\t\ttext-decoration: none;\n\t\t\t}\n\t\t}\n\t}\n\n\t.years-selects {\n\t\tmax-width: 300px;\n\t\tmargin: 0 auto;\n\t}\n}\n\n.mini .colsearchbutton,\n.mini .colclean {\n\ttext-align: right;\n\tmax-width: 160px;\n\tbutton {\n\t\twidth: 100%;\n\t}\n}\n\n//cambiar este nombre confuso\n.mini .searchZone {\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\tmargin-bottom: 0;\n\t.form-row {\n\t\twidth: 100%;\n\t}\n\n\t.searchButton {\n\t\tmargin-top: 0;\n\t}\n\n\t.years-selects.form-row {\n\t\tpadding: 0;\n\t\tmargin-top: -24px;\n\t}\n}\n\n.TaxBrowserHome {\n\t\n\tmargin-bottom: 120px;\n\n\t.filterHomeSection {\n\t\tpadding: 36px;\n\t\tbackground-color: #ccc;\n\t\tcolor: #777;\n\t\tmargin-bottom: 24px;\n\t}\n\n\th3.taxTitle {\n\t\tfont-weight: 600;\n\t\ttext-align: center;\n\t\tmargin-bottom: 24px;\n\t}\n}\n\n.TaxBrowser {\n\tmargin-top: 24px;\n\tpadding: 36px;\n\tbackground-color: #ccc;\n\tcolor: #777;\n\th3.numberResults {\n\t\tfont-size: 22px;\n\t\tfont-weight: 600;\n\t\ttext-align: left;\n\t\tcolor: #333;\n\t\tmargin: 0;\n\t}\n\n\tlabel {\n\t\tfont-size: 14px;\n\t\tcolor: #333;\n\t}\n}\n\n\n\n.searchMainTitle {\n\tfont-size: 72px;\n\ttext-align: center;\n\tfont-weight: 600;\n\tcolor: white;\n\ttext-transform: uppercase;\n\tmax-width: 600px;\n\tmargin: 12px auto;\n\t\n}\n\n.taxbrowserTitle {\n\ttext-transform: uppercase;\n\ttext-align: center;\n\tcolor: #333;\n\tfont-size: 48px;\n\tmargin: 24px 0 48px 0;\n\tfont-weight: 600;\n}\n\n#ctci_search .mini {\n\t.searchInfo {\n\t\tfont-size: 36px;\n\t}\n}\n\n.form-row {\n\tpadding: 12px 0;\n}\n\nh3.resultsTitle {\n\tmargin: 24px 0 0 0;\n}\n\n.loadingZone {\n\ttext-align: center;\n\tpadding: 24px;\n}\n\n.results {\n\tbackground-color: rgba(255, 255, 255, 0.7);\n\tpadding: 24px;\n\tborder: 0;\n\tmargin: 0;\n\tbox-shadow: inset 0px 2px 4px #333;\n}\n\n.results.empty {\n\t//padding: 0;\n\n\tp:empty {\n\t\tdisplay: none;\n\t}\n}\n\n.titleZone {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n}\n\n.resultsDetail {\n\tpadding: 0;\n\tmargin-bottom: 24px;\n\tp {\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t}\n\n\t.yearRange {\n\t\tspan {\n\t\t\tdisplay: inline-block;\n\t\t\tpadding: 0 3px;\n\t\t}\n\t}\n}\n\n.TaxBrowserHome {\n\ttext-align: center;\n\n\th3 {\n\t\tmargin-bottom: 0;\n\t}\n}\n\n.termdesc {\n\tmargin: 12px 0;\n}\n",
+			"file": "src/sass/components/Search.scss",
+			"file_size": 3229,
+			"file_write_time": 132455095437225714,
+			"settings":
+			{
+				"buffer_size": 3231,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sass/components/DocItem.scss",
+			"settings":
+			{
+				"buffer_size": 1023,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -199,24 +316,7 @@
 			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
 			"settings":
 			{
-				"buffer_size": 2069,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-			"settings":
-			{
-				"buffer_size": 11332,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/bootstrap/_custom_bootstrap_variables.scss",
-			"settings":
-			{
-				"buffer_size": 48457,
+				"buffer_size": 1613,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -234,20 +334,12 @@
 		"selected_items":
 		[
 			[
-				"prett",
-				"JsPrettier: Format Code"
-			],
-			[
-				"exp",
-				"Emmet: Expand Abbreviation"
-			],
-			[
-				"emm",
-				"Emmet: Expand Abbreviation"
-			],
-			[
 				"ww",
 				"Word Wrap: Toggle"
+			],
+			[
+				"prett",
+				"JsPrettier: Format Code"
 			],
 			[
 				"pre",
@@ -256,6 +348,22 @@
 			[
 				"comm",
 				"Toggle Comment"
+			],
+			[
+				"synba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"expa",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"exp",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"emm",
+				"Emmet: Expand Abbreviation"
 			],
 			[
 				"rein",
@@ -423,27 +531,34 @@
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials"
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/wpstyles"
 	],
 	"file_history":
 	[
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/Search.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ChangeYear.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsDetail.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsTitle.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/single.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/DocSingle.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocViewer.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/index.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectTerm.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap_variables.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/node_modules/bootstrap/scss/_forms.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/DocSingle.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocViewer.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
+		"/home/pablo/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/single.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/index.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/gulpfile.babel.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_fields.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
@@ -478,7 +593,6 @@
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/DayField.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/YearField.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap_variables.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/.gitignore",
 		"/home/pablo/Local Sites/c80/app/public/wp-config.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/phploy.ini",
@@ -522,12 +636,11 @@
 		"/home/pablo/Local Sites/luciaegana/app/public/wp-content/themes/ler/gulpfile.babel.js",
 		"/home/pablo/Local Sites/luciaegana/app/public/wp-content/themes/ler/node_modules/node-sass/test/fixtures/sass-path/orange/colors.scss",
 		"/home/pablo/Local Sites/luciaegana/app/public/wp-content/themes/ler/dist/js/lucy.js",
-		"/home/pablo/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
 		"/home/pablo/Local Sites/luciaegana/app/public/wp-content/themes/ler/node_modules/isotope-layout/js/isotope.js"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -542,6 +655,55 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"date",
+			"hasta",
+			"istermsearch",
+			"searchmessage",
+			"resultstitle",
+			"termlabels",
+			"mini",
+			"button",
+			"resultstitle",
+			"taxbrowser",
+			"form-row",
+			"taxbrowser",
+			"earsearc",
+			"this.",
+			"YearChange",
+			"resultstitle",
+			"gettermswithchildren",
+			"selectedterm",
+			"years-select",
+			"searchfield",
+			"use",
+			"this.props.title.",
+			"</p>",
+			":",
+			" {",
+			"Área: ",
+			":",
+			"undefined",
+			"s_",
+			"searchterm",
+			"undefined",
+			"null",
+			"termsearch",
+			"type",
+			"doctype",
+			"'custom'",
+			"'endyear'",
+			"'startyear",
+			"'s'",
+			"this.state.search.",
+			"searchcontent",
+			"buildsearch",
+			"this.state.endYear",
+			"prevState.startYear",
+			"this.state.startYear",
+			"this.state.searchContent",
+			"searchterm",
+			"changeterm",
 			"mini",
 			"btn",
 			"termdescription",
@@ -595,6 +757,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"this.state.s_",
+			"this.state.search.endyear",
+			"prevState.search.startyear",
+			"this.state.search.startyear",
+			"this.state.search.content"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -605,31 +772,116 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 15,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "node_modules/bootstrap/scss/_forms.scss",
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9242,
+						"buffer_size": 768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								998,
-								998
+								701,
+								701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/single-ctci_doc.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/js/bundle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/sass/components/DocViewer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -639,20 +891,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "views/single-ctci_doc.twig",
+					"buffer": 4,
+					"file": "views/base.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2424,
+						"buffer_size": 1310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2201,
-								2201
+								797,
+								797
 							]
 						],
 						"settings":
@@ -661,114 +913,115 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/sass/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								933,
+								933
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "gulpfile.babel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2309,
+								2309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Gulpfile).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 842.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3705,
+								3705
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "theme/functions.php",
+					"buffer": 8,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4827,
+						"buffer_size": 11407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/sass/DocSingle.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4,
-								4
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/sass/components/DocViewer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 709,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								351,
-								351
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								512,
-								512
+								11187,
+								11187
 							]
 						],
 						"settings":
@@ -777,19 +1030,48 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 77.0,
+						"translation.y": 6068.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/sass/components/DocItem.scss",
+					"buffer": 9,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 953,
+						"buffer_size": 1577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 937,
 						"regions":
 						{
 						},
@@ -802,35 +1084,6 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1478,
-								1478
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -838,53 +1091,83 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "src/sass/components/Search.scss",
+					"buffer": 11,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2424,
+						"buffer_size": 1100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1273,
-								1273
+								1100,
+								1100
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+					"buffer": 12,
+					"file": "theme/functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10955,
+						"buffer_size": 4825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6575,
-								6575
+								568,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
 							]
 						],
 						"settings":
@@ -893,99 +1176,126 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3870.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2069,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1446,
-								1446
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+					"buffer": 14,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11332,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3625,
-								3625
+								380,
+								380
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/sass/components/Search.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2335,
+								2335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2138.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "src/sass/bootstrap/_custom_bootstrap_variables.scss",
+					"buffer": 16,
+					"file": "src/sass/components/DocItem.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 48457,
+						"buffer_size": 1023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5751,
-								5751
+								316,
+								316
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2760.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1160,
+								1160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1030,7 +1340,7 @@
 	"project": "ctci.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1040,28 +1350,124 @@
 		"selected_items":
 		[
 			[
-				"fun",
-				"ctci-twig/theme/functions.php"
-			],
-			[
 				"searc",
 				"ctci-twig/src/sass/components/Search.scss"
 			],
 			[
-				"doci",
+				"docit",
 				"ctci_search/src/DocItem.js"
+			],
+			[
+				"docite",
+				"ctci-twig/src/sass/components/DocItem.scss"
+			],
+			[
+				"sea",
+				"ctci-twig/src/sass/components/Search.scss"
+			],
+			[
+				"docda",
+				"ctci_search/src/partials/DocDate.js"
+			],
+			[
+				"gulpf",
+				"ctci-twig/gulpfile.babel.js"
+			],
+			[
+				"styl",
+				"ctci-twig/src/sass/style.scss"
+			],
+			[
+				"taxbro",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"select",
+				"ctci_search/src/partials/SelectYear.js"
+			],
+			[
+				"tax",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"packag",
+				"ctci_search/package.json"
+			],
+			[
+				"func",
+				"ctci-twig/theme/functions.php"
+			],
+			[
+				"vie",
+				"ctci-twig/src/sass/components/DocViewer.scss"
+			],
+			[
+				"bas",
+				"ctci-twig/views/base.twig"
+			],
+			[
+				"single",
+				"ctci-twig/views/single-ctci_doc.twig"
+			],
+			[
+				"themes",
+				"ctci_search/src/partials/selectTheme.js"
+			],
+			[
+				"selectt",
+				"ctci_search/src/partials/SelectTerm.js"
+			],
+			[
+				"search",
+				"ctci-twig/src/sass/components/Search.scss"
 			],
 			[
 				"res",
 				"ctci_search/src/Results.js"
 			],
 			[
-				"ctcis",
-				"ctci_search/ctci_search.php"
+				"taxb",
+				"ctci_search/src/TaxBrowser.js"
 			],
 			[
 				"inde",
 				"ctci_search/src/index.js"
+			],
+			[
+				"selecty",
+				"ctci_search/src/partials/SelectYear.js"
+			],
+			[
+				"taxbr",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"resu",
+				"ctci_search/src/Results.js"
+			],
+			[
+				"ctcs",
+				"ctci_search/ctci_search.php"
+			],
+			[
+				"index",
+				"ctci_search/src/index.js"
+			],
+			[
+				"resul",
+				"ctci_search/src/Results.js"
+			],
+			[
+				"fun",
+				"ctci-twig/theme/functions.php"
+			],
+			[
+				"doci",
+				"ctci_search/src/DocItem.js"
+			],
+			[
+				"ctcis",
+				"ctci_search/ctci_search.php"
 			],
 			[
 				"docvie",
@@ -1076,16 +1482,8 @@
 				"ctci-twig/src/sass/DocSingle.scss"
 			],
 			[
-				"single",
-				"ctci-twig/views/single-ctci_doc.twig"
-			],
-			[
 				"sear",
 				"ctci-twig/src/sass/components/Search.scss"
-			],
-			[
-				"resul",
-				"ctci_search/src/Results.js"
 			],
 			[
 				"docvi",
@@ -1094,18 +1492,6 @@
 			[
 				"singl",
 				"ctci-twig/theme/single.php"
-			],
-			[
-				"func",
-				"ctci-twig/theme/functions.php"
-			],
-			[
-				"bas",
-				"ctci-twig/views/base.twig"
-			],
-			[
-				"taxbr",
-				"ctci_search/src/TaxBrowser.js"
 			],
 			[
 				"base",
@@ -1124,26 +1510,6 @@
 				"ctci_search/src/Results.js"
 			],
 			[
-				"index",
-				"ctci_search/src/index.js"
-			],
-			[
-				"taxb",
-				"ctci_search/src/TaxBrowser.js"
-			],
-			[
-				"search",
-				"ctci_search/ctci_search.php"
-			],
-			[
-				"tax",
-				"ctci_search/src/TaxBrowser.js"
-			],
-			[
-				"docit",
-				"ctci_search/src/DocItem.js"
-			],
-			[
 				"custom",
 				"ctci_custom_content/ctci_custom_content.php"
 			],
@@ -1154,10 +1520,6 @@
 			[
 				"docm",
 				"ctci_search/src/partials/DocMeta.js"
-			],
-			[
-				"sea",
-				"ctci_search/ctci_search.php"
 			],
 			[
 				"web",
@@ -1194,10 +1556,6 @@
 			[
 				"fu",
 				"ctci-twig/theme/functions.php"
-			],
-			[
-				"docda",
-				"ctci-twig/views/partial/docdata.twig"
 			],
 			[
 				"sin",
@@ -1264,10 +1622,6 @@
 				"ctci_search/ctci_search.php"
 			],
 			[
-				"resu",
-				"ctci_search/src/Results.js"
-			],
-			[
 				"phpl",
 				"ctci_viewer/phploy.ini"
 			],
@@ -1306,10 +1660,6 @@
 			[
 				"item",
 				"src/sass/elements/_item.scss"
-			],
-			[
-				"gulpf",
-				"gulpfile.babel.js"
 			],
 			[
 				"templa",
@@ -1393,16 +1743,16 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "cede",
+		"last_filter": "c80",
 		"selected_items":
 		[
 			[
-				"cede",
-				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
-			],
-			[
 				"c80",
 				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
+			],
+			[
+				"cede",
+				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
 			],
 			[
 				"",

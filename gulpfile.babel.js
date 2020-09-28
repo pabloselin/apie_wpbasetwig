@@ -95,14 +95,15 @@ export const watchForChanges = () => {
 	watch("src/sass/**/*.scss", styles);
 	watch("src/js/**/*.js", series(scripts, reload));
 	watch("**/*.php", reload);
-	watch("views/**/*.twig", reload)
+	watch("views/**/*.twig", reload);
+	watch("src/img/**/*.*", series(images, reload));
 };
 
 export const clean = () => del(["dist"]);
 
 export const dev = series(
 	clean,
-	parallel(styles, scripts),
+	parallel(styles, scripts, images),
 	serve,
 	watchForChanges
 );

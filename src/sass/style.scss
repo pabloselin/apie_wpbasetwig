@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "bootstrap/custom_bootstrap";
 @import "wpstyles/wordpress-core";
+@import "mixins/mediaqueries.scss";
 
 .wrapper {
 	//@extend .container;
@@ -34,8 +35,9 @@ header.header {
 	//background-color: white;
 	color: white;
 	height: 120px;
+	padding: 12px;
 	img {
-		margin: 12px 0 0 12px;
+		max-width: 100%;
 	}
 }
 
@@ -50,9 +52,9 @@ header.header {
 
 body {
 	background-color: #020226;
-	background-image: url('../img/nodos.png'), linear-gradient(to left, #01515a, #020226);
+	background-image: url('../img/nodos_e.svg'), linear-gradient(215deg, #01515a, #020226);
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: right top, center;
 }
 
 //Singles

@@ -10,14 +10,22 @@
 	h1 {
 		font-weight: 600;
 		font-size: 24px;
+		margin-bottom: 0;
 		a {
 			color: #333;
 		}
 	}
 
+	@include respond-below(md) {
+		padding: 12px;
+		margin-bottom: 6px;
+	}
+
 	.DocMeta {
 		.date {
 			font-weight: 600;
+			display: inline-block;
+			margin-bottom: 16px;
 		}
 	}
 
@@ -46,6 +54,12 @@
 				content: none;
 			}
 		}
+
+		@include respond-below(md) {
+			position: relative;
+			left: 0;
+			bottom: 0;
+		}
 	}
 
 	img, .placeholder {
@@ -56,6 +70,9 @@
 		height: auto;
 		flex-shrink: 0;
 		box-shadow: 0 1px 6px #ccc;
+		@include respond-below(md) {
+			width: 60px;
+		}
 	}
 
 	.docText {
