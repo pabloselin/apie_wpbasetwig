@@ -57,6 +57,19 @@ body {
 	background-position: right top, center;
 }
 
+.admin-bar {
+	#nav-main {
+		top: 42px;
+		.mobileToggle {
+			top: 0;
+		}
+	}
+
+	.mobileToggle {
+		top: 62px;
+	}
+}
+
 #nav-main {
 	position: absolute;
 	right: 12px;
