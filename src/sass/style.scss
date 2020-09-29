@@ -30,6 +30,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	//@extend .container;
 }
 
+
+
 header.header {
 	width: 100%;
 	//background-color: white;
@@ -39,6 +41,27 @@ header.header {
 	img {
 		max-width: 100px;
 	}
+
+	span.sitename {
+		text-transform: uppercase;
+		font-weight: 800;
+		display: inline-block;
+		font-size: 24px;
+		line-height: 60px;
+		margin: 0 0 0 12px;
+		padding: 0 0 0 22px;
+		border-left: 1px solid white;
+		vertical-align: middle;
+		@include respond-below(md) {
+			font-size: 18px;
+			max-width: 120px;
+			line-height: 24px;
+		}
+	}
+}
+
+body.ctcisearch-expanded span.sitename {
+	display: none;
 }
 
 .debugversion {
@@ -85,7 +108,7 @@ body {
 		color: white;
 		text-transform: uppercase;
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	@include respond-below(md) {
@@ -135,13 +158,14 @@ body {
 	background-color: #00062c;
 	color: white;
 	padding: 12px 0;
+	margin-top: 48px;
 
 	.debugversion {
 		color: #333;
 	}
 
 	img {
-		max-width: 100%;
+		max-width: 200px;
 		height: auto;
 	}
 }
