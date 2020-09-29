@@ -173,6 +173,10 @@
 		font-size: 14px;
 		color: #333;
 	}
+
+	.col, .col-md-2 {
+		padding: 5px;
+	}
 }
 
 
@@ -208,6 +212,11 @@
 }
 
 .taxColHome {
+	@include respond-above(md) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	@include respond-below(md) {
 		margin-bottom: 24px;
 	}

@@ -8,7 +8,7 @@
  * @since   Timber 0.1
  */
 
-define('CTCI_VERSION', '0.2.1');
+define('CTCI_VERSION', '0.2.2');
 
 /**
  * If you are installing Timber as a Composer dependency in your theme, you'll need this block
@@ -69,6 +69,7 @@ class CTCISite extends Timber\Site {
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
 		add_action( 'wp_head', array( $this, 'add_to_head') );
 		add_action( 'wp_enqueue_scripts', array($this, 'enqueue_scripts'));
+		add_action( 'after_setup_theme', array($this, 'register_terms_menus'));
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -80,12 +81,23 @@ class CTCISite extends Timber\Site {
 
 	}
 
+
+ public function register_terms_menus() {
+    register_nav_menus(
+        array(
+            'mainmenu' => 'Menu Principal'
+        	)
+    	);
+	}
+
+
+
 	/** This is where you add some context
 	 *
 	 * @param string $context context['this'] Being the Twig's {{ this }}.
 	 */
 	public function add_to_context( $context ) {
-		$context['menu']  = new Timber\Menu();
+		$context['menu']  = new Timber\Menu('mainmenu');
 		$context['site']  = $this;
 		$context['version'] = CTCI_VERSION;
 		$context['is_front_page'] = is_front_page();
@@ -156,6 +168,7 @@ class CTCISite extends Timber\Site {
 		?>
 
 		<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap');</style>
+		<script src="https://kit.fontawesome.com/14643ca681.js" crossorigin="anonymous"></script>
 
 		<?php 
 	}

@@ -12,15 +12,27 @@ function ready(fn) {
 	}
 }
 
-const back = () => {
+const init = () => {
 	const backButton = document.getElementById("backToSearch");
 	if (backButton) {
 		backButton.addEventListener("click", () => {
 			history.back();
 		});
 	}
+
+	const toggleMenu = document.getElementsByClassName('toggleMenu');
+	const mainNav = document.getElementById('nav-main');
+
+	for(i = 0; i < toggleMenu.length; i++) {
+		toggleMenu[i].addEventListener('click', () => {
+			mainNav.classList.toggle('active');
+		});	
+	}
+	
 };
 
-ready(back);
+
+
+ready(init);
 
 console.log("bundle");

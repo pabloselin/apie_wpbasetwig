@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fa",
+				"faChevronUp"
+			],
+			[
 				"SelectT",
 				"selectTheme.js"
 			],
@@ -160,54 +164,37 @@
 	"buffers":
 	[
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsTitle.js",
 			"settings":
 			{
-				"buffer_size": 768,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/single-ctci_doc.twig",
-			"settings":
-			{
-				"buffer_size": 2564,
+				"buffer_size": 2021,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/bundle.js",
+			"file": "src/sass/components/Search.scss",
 			"settings":
 			{
-				"buffer_size": 502,
+				"buffer_size": 3975,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/sass/components/DocViewer.scss",
+			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
 			"settings":
 			{
-				"buffer_size": 803,
+				"buffer_size": 2702,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/base.twig",
+			"file": "theme/functions.php",
 			"settings":
 			{
-				"buffer_size": 1310,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/style.scss",
-			"settings":
-			{
-				"buffer_size": 1540,
+				"buffer_size": 4827,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -222,102 +209,10 @@
 			}
 		},
 		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+			"file": "src/img/nodos_d.svg",
 			"settings":
 			{
-				"buffer_size": 13260,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
-			"settings":
-			{
-				"buffer_size": 11407,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-			"settings":
-			{
-				"buffer_size": 1577,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
-			"settings":
-			{
-				"buffer_size": 937,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-			"settings":
-			{
-				"buffer_size": 1100,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "theme/functions.php",
-			"settings":
-			{
-				"buffer_size": 4825,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-			"settings":
-			{
-				"buffer_size": 1258,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
-			"settings":
-			{
-				"buffer_size": 451,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": ".mini.container {\n\tpadding: 0;\n}\n\n.searchButton,\n.cleanButton {\n\tbackground-color: #777;\n\tcolor: white;\n\tborder: 0;\n\tpadding: 12px 24px;\n\tmargin: 12px 0;\n}\n\n.cleanButton {\n\tmargin: 0;\n}\n\n.searchInfo {\n\tfont-size: 72px;\n\tfont-weight: 800;\n\ttext-transform: uppercase;\n\tcolor: white;\n\ttext-align: left;\n\tline-height: 1.2em;\n}\n\n.SearchField {\n\tinput[type=\"text\"] {\n\t\tmargin: 0 auto;\n\t\tpadding: 12px;\n\t\tfont-size: 24px;\n\t\t//min-width: 300px;\n\t\tmax-width: 600px;\n\t\tborder-radius: 15px;\n\t}\n}\n\n.expanded .SearchField {\n\t.searchButton {\n\t\tpadding: 12px 36px;\n\t\tmin-width: 210px;\n\t}\n}\n\n\n.yearTo {\n\tmargin:6px 0 0 20px;\n}\n\n\n.years-selects {\n\ttext-align: left;\n\tlabel {\n\t\tcolor: #777;\n\t}\n}\n\n.expanded .SearchField {\n\tborder-bottom: 0;\n}\n\n.SearchZone {\n\ttext-align: right;\n\tpadding: 24px;\n\tmargin-bottom: 0;\n\tbackground-color: #ccc;\n\ttext-align: center;\n}\n\n.expanded {\n\t.SearchZone {\n\t\tbackground-color: transparent;\n\t\tbox-shadow: none;\n\t\tcolor: white;\n\t}\n\n\t.form-row {\n\t\tflex-direction: column;\n\t}\n\n\t.mainSearchInput {\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\ttext-align: right;\n\n\t\t.toggleLayout {\n\t\t\tdisplay: inline-block;\n\t\t\tmargin-top: 4px;\n\t\t\ttext-decoration: underline;\n\t\t\tfont-weight: 500;\n\t\t\tcursor: pointer;\n\t\t\t&:hover {\n\t\t\t\ttext-decoration: none;\n\t\t\t}\n\t\t}\n\t}\n\n\t.years-selects {\n\t\tmax-width: 300px;\n\t\tmargin: 0 auto;\n\t}\n}\n\n.mini .colsearchbutton,\n.mini .colclean {\n\ttext-align: right;\n\tmax-width: 160px;\n\tbutton {\n\t\twidth: 100%;\n\t}\n}\n\n//cambiar este nombre confuso\n.mini .searchZone {\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\tmargin-bottom: 0;\n\t.form-row {\n\t\twidth: 100%;\n\t}\n\n\t.searchButton {\n\t\tmargin-top: 0;\n\t}\n\n\t.years-selects.form-row {\n\t\tpadding: 0;\n\t\tmargin-top: -24px;\n\t}\n}\n\n.TaxBrowserHome {\n\t\n\tmargin-bottom: 120px;\n\n\t.filterHomeSection {\n\t\tpadding: 36px;\n\t\tbackground-color: #ccc;\n\t\tcolor: #777;\n\t\tmargin-bottom: 24px;\n\t}\n\n\th3.taxTitle {\n\t\tfont-weight: 600;\n\t\ttext-align: center;\n\t\tmargin-bottom: 24px;\n\t}\n}\n\n.TaxBrowser {\n\tmargin-top: 24px;\n\tpadding: 36px;\n\tbackground-color: #ccc;\n\tcolor: #777;\n\th3.numberResults {\n\t\tfont-size: 22px;\n\t\tfont-weight: 600;\n\t\ttext-align: left;\n\t\tcolor: #333;\n\t\tmargin: 0;\n\t}\n\n\tlabel {\n\t\tfont-size: 14px;\n\t\tcolor: #333;\n\t}\n}\n\n\n\n.searchMainTitle {\n\tfont-size: 72px;\n\ttext-align: center;\n\tfont-weight: 600;\n\tcolor: white;\n\ttext-transform: uppercase;\n\tmax-width: 600px;\n\tmargin: 12px auto;\n\t\n}\n\n.taxbrowserTitle {\n\ttext-transform: uppercase;\n\ttext-align: center;\n\tcolor: #333;\n\tfont-size: 48px;\n\tmargin: 24px 0 48px 0;\n\tfont-weight: 600;\n}\n\n#ctci_search .mini {\n\t.searchInfo {\n\t\tfont-size: 36px;\n\t}\n}\n\n.form-row {\n\tpadding: 12px 0;\n}\n\nh3.resultsTitle {\n\tmargin: 24px 0 0 0;\n}\n\n.loadingZone {\n\ttext-align: center;\n\tpadding: 24px;\n}\n\n.results {\n\tbackground-color: rgba(255, 255, 255, 0.7);\n\tpadding: 24px;\n\tborder: 0;\n\tmargin: 0;\n\tbox-shadow: inset 0px 2px 4px #333;\n}\n\n.results.empty {\n\t//padding: 0;\n\n\tp:empty {\n\t\tdisplay: none;\n\t}\n}\n\n.titleZone {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n}\n\n.resultsDetail {\n\tpadding: 0;\n\tmargin-bottom: 24px;\n\tp {\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t}\n\n\t.yearRange {\n\t\tspan {\n\t\t\tdisplay: inline-block;\n\t\t\tpadding: 0 3px;\n\t\t}\n\t}\n}\n\n.TaxBrowserHome {\n\ttext-align: center;\n\n\th3 {\n\t\tmargin-bottom: 0;\n\t}\n}\n\n.termdesc {\n\tmargin: 12px 0;\n}\n",
-			"file": "src/sass/components/Search.scss",
-			"file_size": 3229,
-			"file_write_time": 132455095437225714,
-			"settings":
-			{
-				"buffer_size": 3231,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/sass/components/DocItem.scss",
-			"settings":
-			{
-				"buffer_size": 1023,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-			"settings":
-			{
-				"buffer_size": 1613,
-				"encoding": "UTF-8",
+				"buffer_size": 95092,
 				"line_ending": "Unix"
 			}
 		}
@@ -334,12 +229,12 @@
 		"selected_items":
 		[
 			[
-				"ww",
-				"Word Wrap: Toggle"
-			],
-			[
 				"prett",
 				"JsPrettier: Format Code"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
 			],
 			[
 				"pre",
@@ -528,6 +423,7 @@
 	[
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/img",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components",
@@ -535,33 +431,36 @@
 	],
 	"file_history":
 	[
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/mixins/mediaqueries.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/js/bundle.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocViewer.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/gulpfile.babel.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
+		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/Search.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ChangeYear.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsDetail.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsTitle.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectTerm.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/bootstrap/_custom_bootstrap_variables.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/node_modules/bootstrap/scss/_forms.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/single-ctci_doc.twig",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/functions.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/DocSingle.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocViewer.scss",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/components/DocItem.scss",
 		"/home/pablo/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/views/base.twig",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/theme/single.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/src/sass/style.scss",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_viewer/src/index.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/themes/ctci-twig/gulpfile.babel.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_fields.php",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/ctci_custom_content.php",
 		"/tmp/fz3temp-2/www-error.log",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/utils/handleUpload.js",
@@ -592,7 +491,6 @@
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/index.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/DayField.js",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_custom_content/src/fields/YearField.js",
-		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/.gitignore",
 		"/home/pablo/Local Sites/c80/app/public/wp-config.php",
 		"/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/phploy.ini",
@@ -655,6 +553,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"results",
+			"mainsearch",
+			"mainsearh",
 			"content",
 			"date",
 			"hasta",
@@ -772,24 +673,24 @@
 	"groups":
 	[
 		{
-			"selected": 15,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/selectTheme.js",
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/ResultsTitle.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 768,
+						"buffer_size": 2021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								701,
-								701
+								1079,
+								1079
 							]
 						],
 						"settings":
@@ -798,158 +699,101 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "views/single-ctci_doc.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								901,
-								901
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/js/bundle.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								457,
-								457
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/sass/components/DocViewer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "views/base.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								797,
-								797
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/sass/style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								933,
-								933
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 196.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 1,
+					"file": "src/sass/components/Search.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3716,
+								3716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3563.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1790,
+								1790
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "theme/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								772,
+								772
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "gulpfile.babel.js",
 					"semi_transient": false,
 					"settings":
@@ -961,8 +805,8 @@
 						"selection":
 						[
 							[
-								2309,
-								2309
+								1812,
+								1812
 							]
 						],
 						"settings":
@@ -971,107 +815,19 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 842.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/ctci_search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3705,
-								3705
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 990.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11187,
-								11187
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6068.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/DocItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								433,
-								433
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/SelectYear.js",
-					"semi_transient": false,
+					"buffer": 5,
+					"file": "src/img/nodos_d.svg",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 937,
+						"buffer_size": 95092,
 						"regions":
 						{
 						},
@@ -1084,36 +840,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1100,
-								1100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/XML (SVG).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1121,181 +848,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "theme/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/Results.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								99,
-								99
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/partials/DocDate.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 451,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								380,
-								380
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "src/sass/components/Search.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2335,
-								2335
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2138.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "src/sass/components/DocItem.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1023,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								316,
-								316
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/home/pablo/Local Sites/ctcidocs/app/public/wp-content/plugins/ctci_search/src/TaxBrowser.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1613,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1160,
-								1160
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1350,6 +903,50 @@
 		"selected_items":
 		[
 			[
+				"gulp",
+				"ctci-twig/gulpfile.babel.js"
+			],
+			[
+				"func",
+				"ctci-twig/theme/functions.php"
+			],
+			[
+				"taxbr",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"sea",
+				"ctci-twig/src/sass/components/Search.scss"
+			],
+			[
+				"resultstit",
+				"ctci_search/src/partials/ResultsTitle.js"
+			],
+			[
+				"inde",
+				"ctci_search/src/index.js"
+			],
+			[
+				"tax",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"taxb",
+				"ctci_search/src/TaxBrowser.js"
+			],
+			[
+				"styl",
+				"ctci-twig/src/sass/style.scss"
+			],
+			[
+				"index.",
+				"ctci_search/src/index.js"
+			],
+			[
+				"style",
+				"ctci-twig/src/sass/style.scss"
+			],
+			[
 				"searc",
 				"ctci-twig/src/sass/components/Search.scss"
 			],
@@ -1362,20 +959,12 @@
 				"ctci-twig/src/sass/components/DocItem.scss"
 			],
 			[
-				"sea",
-				"ctci-twig/src/sass/components/Search.scss"
-			],
-			[
 				"docda",
 				"ctci_search/src/partials/DocDate.js"
 			],
 			[
 				"gulpf",
 				"ctci-twig/gulpfile.babel.js"
-			],
-			[
-				"styl",
-				"ctci-twig/src/sass/style.scss"
 			],
 			[
 				"taxbro",
@@ -1386,16 +975,8 @@
 				"ctci_search/src/partials/SelectYear.js"
 			],
 			[
-				"tax",
-				"ctci_search/src/TaxBrowser.js"
-			],
-			[
 				"packag",
 				"ctci_search/package.json"
-			],
-			[
-				"func",
-				"ctci-twig/theme/functions.php"
 			],
 			[
 				"vie",
@@ -1426,20 +1007,8 @@
 				"ctci_search/src/Results.js"
 			],
 			[
-				"taxb",
-				"ctci_search/src/TaxBrowser.js"
-			],
-			[
-				"inde",
-				"ctci_search/src/index.js"
-			],
-			[
 				"selecty",
 				"ctci_search/src/partials/SelectYear.js"
-			],
-			[
-				"taxbr",
-				"ctci_search/src/TaxBrowser.js"
 			],
 			[
 				"resu",
@@ -1502,10 +1071,6 @@
 				"ctci_custom_content/ctci_custom_fields.php"
 			],
 			[
-				"gulp",
-				"ctci-twig/gulpfile.babel.js"
-			],
-			[
 				"result",
 				"ctci_search/src/Results.js"
 			],
@@ -1548,10 +1113,6 @@
 			[
 				"ctciseainde",
 				"ctci_search/src/index.js"
-			],
-			[
-				"index.",
-				"ctci-twig/theme/index.php"
 			],
 			[
 				"fu",
@@ -1743,16 +1304,16 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "c80",
+		"last_filter": "cede",
 		"selected_items":
 		[
 			[
-				"c80",
-				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
-			],
-			[
 				"cede",
 				"~/Local Sites/cedet/app/public/wp-content/themes/cedet2020/cedet2020.sublime-project"
+			],
+			[
+				"c80",
+				"~/Local Sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
 			],
 			[
 				"",
