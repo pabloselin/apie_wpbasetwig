@@ -8,7 +8,7 @@
  * @since   Timber 0.1
  */
 
-define('CTCI_VERSION', '0.2.3');
+define('CTCI_VERSION', '0.2.4');
 
 /**
  * If you are installing Timber as a Composer dependency in your theme, you'll need this block
@@ -167,7 +167,7 @@ class CTCISite extends Timber\Site {
 	public function add_to_head() {
 		?>
 
-		<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap');</style>
+		<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');</style>
 		<script src="https://kit.fontawesome.com/14643ca681.js" crossorigin="anonymous"></script>
 
 		<?php 

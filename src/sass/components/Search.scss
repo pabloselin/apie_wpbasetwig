@@ -144,12 +144,26 @@
 		background-color: #ccc;
 		color: #777;
 		margin-bottom: 24px;
+		position: relative;
+		.extraBrowser {
+			position: absolute;
+			right: 12px;
+			top: 12px;
+		}
 	}
 
-	h3.taxTitle {
-		font-weight: 600;
+	.TaxBrowser {
+		padding: 0;
+	}
+
+	h3.taxTitle,
+	.TaxBrowser label
+	 {
+	 	font-size: 1.75rem;
+		font-weight: 800;
 		text-align: center;
 		margin-bottom: 24px;
+		color: #777;
 		@include respond-below(md) {
 			font-size: 20px;
 		}
@@ -163,7 +177,7 @@
 	color: #777;
 	h3.numberResults {
 		font-size: 22px;
-		font-weight: 600;
+		font-weight: 800;
 		text-align: left;
 		color: #333;
 		margin: 0;
@@ -184,7 +198,7 @@
 .searchMainTitle {
 	font-size: 72px;
 	text-align: center;
-	font-weight: 600;
+	font-weight: 800;
 	color: white;
 	text-transform: uppercase;
 	max-width: 600px;
@@ -195,12 +209,12 @@
 }
 
 .taxbrowserTitle {
-	text-transform: uppercase;
+	//text-transform: uppercase;
 	text-align: center;
 	color: #333;
 	font-size: 48px;
 	margin: 24px 0 48px 0;
-	font-weight: 600;
+	font-weight: 800;
 	@include respond-below(xl) {
 		font-size: 32px;
 		margin:0 0 24px 0;

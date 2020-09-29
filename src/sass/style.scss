@@ -52,7 +52,7 @@ header.header {
 
 body {
 	background-color: #020226;
-	background-image: url('../img/nodos_e.svg'), linear-gradient(215deg, #01515a, #020226);
+	background-image: url('../img/nodos_f.svg'), linear-gradient(215deg, #01515a, #020226);
 	background-repeat: no-repeat;
 	background-position: right top, center;
 }
@@ -78,7 +78,7 @@ body {
 	li {
 		list-style: none;
 		display: inline-block;
-		margin: 12px;
+		margin: 12px 36px;
 	}
 
 	a {
@@ -107,6 +107,7 @@ body {
 		li {
 			display: block;
 			text-align: left;
+			margin: 12px;
 		}
 
 	}
