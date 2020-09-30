@@ -9,10 +9,17 @@ a#backToSearch {
 
 .ctciv_document {
 	max-width: 100%;
+	max-height: 600px;
 	overflow: auto;
 	border: 1px solid #ccc;
 	margin: 0 0 24px 0;
-	background-color: white;
+	background-color: #777;
+
+	.react-pdf__Page canvas {
+		margin: 12px auto;
+		background-color: white;
+		box-shadow: 0 0 4px #333;
+	}
 }
 
 iframe.pdfviewer {
