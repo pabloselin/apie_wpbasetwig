@@ -75,7 +75,7 @@ export const init = () => {
 };
 
 export const images = () => {
-	return src('src/img/*')
+	return src('src/img/**/*.*')
 			.pipe(dest("dist/img"))
 }
 
