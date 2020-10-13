@@ -16,6 +16,10 @@
 		}
 	}
 
+	mark {
+		background-color: #FADA76;
+	}
+
 	@include respond-below(md) {
 		padding: 12px;
 		margin-bottom: 6px;
