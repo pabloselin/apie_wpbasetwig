@@ -42,11 +42,9 @@
 	}
 }
 
-
 .yearTo {
-	margin:6px 0 0 20px;
+	margin: 6px 0 0 20px;
 }
-
 
 .years-selects {
 	text-align: left;
@@ -103,11 +101,11 @@
 
 .mini .mainSearchInput {
 	@include respond-below(md) {
-			margin-bottom: 24px;
-		}
+		margin-bottom: 24px;
+	}
 }
 
-.withValue  > div {
+.withValue > div {
 	border-color: #009f94;
 	border-width: 2px;
 }
@@ -146,7 +144,6 @@ label.wv {
 }
 
 .TaxBrowserHome {
-	
 	margin-bottom: 120px;
 
 	.filterHomeSection {
@@ -167,9 +164,8 @@ label.wv {
 	}
 
 	h3.taxTitle,
-	.TaxBrowser label
-	 {
-	 	font-size: 1.75rem;
+	.TaxBrowser label {
+		font-size: 1.75rem;
 		font-weight: 800;
 		text-align: center;
 		margin-bottom: 24px;
@@ -198,7 +194,8 @@ label.wv {
 		color: #333;
 	}
 
-	.col, .col-md-2 {
+	.col,
+	.col-md-2 {
 		padding: 5px;
 	}
 }
@@ -208,8 +205,6 @@ label.wv {
 		background-color: transparent;
 	}
 }
-
-
 
 .searchMainTitle {
 	font-size: 72px;
@@ -224,6 +219,27 @@ label.wv {
 	}
 }
 
+.infohome {
+	display: none;
+}
+
+body.ctcisearch-expanded {
+	.infohome {
+		display: flex;
+	}
+}
+
+div.intro {
+	color: white;
+	text-align: center;
+	max-width: 800px;
+	margin: 12px auto;
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+}
+
 .taxbrowserTitle {
 	//text-transform: uppercase;
 	text-align: center;
@@ -233,7 +249,7 @@ label.wv {
 	font-weight: 800;
 	@include respond-below(xl) {
 		font-size: 32px;
-		margin:0 0 24px 0;
+		margin: 0 0 24px 0;
 	}
 	@include respond-below(md) {
 		font-size: 24px;
@@ -282,7 +298,7 @@ h3.resultsTitle {
 	border: 0;
 	margin: 0;
 	box-shadow: inset 0px 2px 4px #333;
-	
+
 	@include respond-below(md) {
 		padding: 6px;
 	}

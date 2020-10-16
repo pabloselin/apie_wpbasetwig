@@ -2,6 +2,20 @@
 
 {% block content %}
 	
+	<div class="container">
+		<div class="row infohome">
+			<div class="col">
+				<h1 class="searchMainTitle">
+					{{site.name}}
+				</h1>
+
+				<div class="intro">
+					{{ post.content }}
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="ctci_search" data-layout="expanded"></div>
 	
 {% endblock %}

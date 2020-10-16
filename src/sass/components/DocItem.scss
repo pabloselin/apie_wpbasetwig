@@ -14,10 +14,14 @@
 		a {
 			color: #333;
 		}
+
+		@include respond-below(md) {
+			font-size: 18px;
+		}
 	}
 
 	mark {
-		background-color: #FADA76;
+		background-color: #fada76;
 	}
 
 	@include respond-below(md) {
@@ -33,8 +37,11 @@
 		}
 	}
 
-	.docText {
-
+	.docExcerpt {
+		margin-bottom: 12px;
+		@include respond-below(md) {
+			display: none;
+		}
 	}
 
 	.docTerms {
@@ -47,7 +54,7 @@
 			margin: 0 6px 0 0;
 			font-weight: 600;
 			&:after {
-				content: '|';
+				content: "|";
 				display: inline-block;
 				margin: 0 6px;
 			}
@@ -66,7 +73,8 @@
 		}
 	}
 
-	img, .placeholder {
+	img,
+	.placeholder {
 		//float: left;
 		margin-right: 24px;
 		background-color: #f0f0f0;
@@ -76,6 +84,8 @@
 		box-shadow: 0 1px 6px #ccc;
 		@include respond-below(md) {
 			width: 60px;
+			margin-right: 6px;
+			display: none;
 		}
 	}
 
