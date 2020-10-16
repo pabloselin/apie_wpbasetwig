@@ -30,8 +30,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	//@extend .container;
 }
 
-
-
 header.header {
 	width: 100%;
 	//background-color: white;
@@ -75,7 +73,8 @@ body.ctcisearch-expanded span.sitename {
 
 body {
 	background-color: #020226;
-	background-image: url('../img/nodos_f.svg'), linear-gradient(215deg, #01515a, #020226);
+	background-image: url("../img/nodos_g.svg"),
+		linear-gradient(215deg, #01515a, #020226);
 	background-repeat: no-repeat;
 	background-position: right top, center;
 }
@@ -120,7 +119,7 @@ body {
 		background-color: rgba(0, 6, 44, 0.9);
 		width: 100%;
 		height: 100%;
-		
+
 		&.active {
 			left: 0;
 			opacity: 1;
@@ -131,27 +130,26 @@ body {
 			text-align: left;
 			margin: 12px;
 		}
-
 	}
 }
 
 .mobileToggle {
-		display: none;
-	}
+	display: none;
+}
 
-	@include respond-below(md) {
-		.mobileToggle {
-			display: block;
-			position: absolute;
-			right: 12px;
-			top: 12px;
+@include respond-below(md) {
+	.mobileToggle {
+		display: block;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		color: white;
+		font-size: 32px;
+		a {
 			color: white;
-			font-size: 32px;
-			a {
-				color: white;
-			}
 		}
 	}
+}
 
 #footer {
 	background-color: #00062c;
