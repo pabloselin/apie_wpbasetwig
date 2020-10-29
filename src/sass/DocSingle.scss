@@ -10,6 +10,9 @@
 
 	.article-body {
 		margin: 24px 0;
+		@include respond-below(md) {
+			margin: 6px 0;
+		}
 	}
 }
 
@@ -19,9 +22,22 @@
 	}
 
 	.doctermlist {
+		margin-bottom: 12px;
 		a {
 			color: #333;
 			text-decoration: none;
+		}
+	}
+ 
+	a.tag {
+		font-size: 14px;
+		display: inline-block;
+		padding: 4px;
+		margin: 0 4px 4px 0;
+		border-radius: 10px;
+		border: 1px solid #555;
+		&:hover {
+			background-color: #ccc;
 		}
 	}
 }
@@ -30,12 +46,25 @@
 	h1 {
 		font-size: 28px;
 		font-style: italic;
+		@include respond-below(md) {
+			font-size: 20px;
+		}
 	}
+
+
 }
 
 section.article-content {
 	> .container {
 		padding:24px;
 		background-color: rgba(255,255,255,0.7)
+	}
+}
+
+.backsearchbutton {
+	img {
+		width: 40px;
+		height: 40px;
+		margin-right: 12px;
 	}
 }

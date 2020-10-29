@@ -52,6 +52,18 @@ iframe.pdfviewer {
 			background-color: #f0f0f0;
 		}
 	}
+
+	@include respond-below(md) {
+		button {
+			width: 40px;
+			border-radius: 5px;
+			margin: 1px;
+		}
+
+		.pageNav {
+			top: 10px;
+		}
+	}
 }
 
 .btn-download {

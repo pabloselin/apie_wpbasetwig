@@ -63,6 +63,9 @@
 	margin-bottom: 0;
 	background-color: rgba(204, 204, 204, 0.9);
 	text-align: center;
+	@include respond-below(md) {
+		padding: 0 12px;
+	}
 }
 
 .expanded {
@@ -157,10 +160,18 @@ label.wv {
 			right: 12px;
 			top: 12px;
 		}
-	}
 
-	.TaxBrowser {
-		padding: 0;
+		@include respond-below(md) {
+			padding-top: 52px;
+
+			.extraBrowser {
+				top: 6px;
+				right: 6px;
+				.btn {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 
 	h3.taxTitle,
@@ -172,6 +183,8 @@ label.wv {
 		color: #777;
 		@include respond-below(md) {
 			font-size: 20px;
+			margin-bottom: 4px;
+			margin-top: 12px;
 		}
 	}
 }
@@ -198,6 +211,17 @@ label.wv {
 	.col-md-2 {
 		padding: 5px;
 	}
+
+	@include respond-below(md) {
+		margin-top: 0;
+		padding: 0 12px 12px 12px;
+		.filtersZone {
+			padding: 12px;
+			background-color: darken(#B8BFC0, 5%);
+			box-shadow: inset 0 0 5px #333;
+			//border-top: 1px solid #555
+		}
+	}
 }
 
 .ctcisearch-expanded {
@@ -215,7 +239,7 @@ label.wv {
 	max-width: 600px;
 	margin: 12px auto;
 	@include respond-below(xl) {
-		font-size: 46px;
+		font-size: 32px;
 	}
 }
 
@@ -238,6 +262,14 @@ div.intro {
 		font-size: 24px;
 		font-weight: 600;
 	}
+
+	@include respond-below(md) {
+		h2 {
+			font-size: 18px;
+		}
+
+		font-size: 14px;
+	}
 }
 
 .taxbrowserTitle {
@@ -253,7 +285,7 @@ div.intro {
 	}
 	@include respond-below(md) {
 		font-size: 24px;
-		margin: 0 0 24px 0;
+		margin: 0;
 	}
 }
 
@@ -264,7 +296,7 @@ div.intro {
 		justify-content: space-between;
 	}
 	@include respond-below(md) {
-		margin-bottom: 24px;
+		margin-bottom: 0;
 	}
 }
 
@@ -355,9 +387,17 @@ h3.resultsTitle {
 }
 
 .toggleFilters {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 600;
 	color: #333;
 	cursor: pointer;
-	margin-bottom: 0;
+	margin: 12px 0;
+	padding: 6px 12px;
+	border: 1px solid #333;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.expanded .toggleFilters {
+	display: none;
 }
