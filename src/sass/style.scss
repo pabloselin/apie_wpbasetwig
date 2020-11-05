@@ -171,6 +171,10 @@ body {
 //Singles
 @import "DocSingle";
 
+//Page y visualizacion
+@import "components/Page";
+@import "components/Cytoscape";
+
 // React components get styled here
 
 @import "components/Search";
