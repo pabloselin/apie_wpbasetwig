@@ -39,4 +39,11 @@
 		font-size: 12px;
 		line-height: 26px;
 	}
+
+	p.nodelegend.active {
+		span.nodesigla {
+			background-color: #015059;
+			color: white;
+		}
+	}
 }
