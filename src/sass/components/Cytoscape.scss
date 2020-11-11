@@ -47,3 +47,23 @@
 		}
 	}
 }
+
+#node-info {
+	h2 {
+		margin: 12px 0 0 0;
+		font-size: 24px;
+		font-style: italic;
+	}
+
+	span.date {
+		font-weight: 600;
+		display: inline-block;
+		margin-bottom: 12px;
+	}
+
+	p.autor {
+		font-size: 14px;
+		margin: 6px 0;
+		line-height: 1.3em;
+	}
+}
