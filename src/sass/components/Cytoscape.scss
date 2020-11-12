@@ -29,7 +29,8 @@
 	span.nodesigla {
 		display: inline-block;
 		padding: 3px;
-		background-color: #ccc;
+		background-color: #C84630;
+		color: white;
 		border-radius: 50%;
 		width: 30px;
 		height: 30px;
@@ -40,9 +41,17 @@
 		line-height: 26px;
 	}
 
+	span.termcount {
+		font-size: 12px;
+		display: inline-block;
+		padding: 0 4px;
+		background-color: #ccc;
+		border-radius: 3px;
+	}
+
 	p.nodelegend.active {
 		span.nodesigla {
-			background-color: #015059;
+			background-color: #F95738;
 			color: white;
 		}
 	}
@@ -51,7 +60,7 @@
 #node-info {
 	h2 {
 		margin: 12px 0 0 0;
-		font-size: 24px;
+		font-size: 18px;
 		font-style: italic;
 	}
 
@@ -63,7 +72,37 @@
 
 	p.autor {
 		font-size: 14px;
-		margin: 6px 0;
+		margin: 6px 0 0 0;
 		line-height: 1.3em;
 	}
+
+	h3 {
+		font-size: 13px;
+	}
+
+	span.nodeterm {
+		font-size: 14px;
+		display: inline-block;
+		padding: 4px;
+		margin: 0 4px 4px 0;
+		border-radius: 10px;
+		border: 1px solid #555;
+	}
+
+	a.doclink {
+		display: inline-block;
+		background-color: #005566;
+		color: white;
+		border-radius: 10px;
+		margin: 12px 0;
+		padding: 6px 12px;
+	}
+
+
+}
+
+#ctcicy_taxswitch {
+	margin-top: 6px;
+	padding-top: 6px;
+	border-top: 1px solid #ccc;
 }
