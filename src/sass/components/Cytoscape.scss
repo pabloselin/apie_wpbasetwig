@@ -1,5 +1,8 @@
 //Cytoscape styling
 
+$docColor: #EE964B;
+$docColorActive: #F95738;
+
 #ctcicy_container {
 	margin: 0 0 24px 0;
 }
@@ -28,10 +31,11 @@
 
 	span.nodesigla {
 		display: inline-block;
-		padding: 3px;
-		background-color: #C84630;
+		padding: 2px 3px 3px 3px;
+		background-color: $docColor;
 		color: white;
-		border-radius: 50%;
+		border-radius: 10px;
+		border: 0.5px solid #555;
 		width: 30px;
 		height: 30px;
 		text-align: center;
@@ -49,17 +53,103 @@
 		border-radius: 3px;
 	}
 
+	p.nodelegend {
+		cursor: pointer;
+		&:hover {
+			span.nodesigla {
+				background-color: desaturate($docColorActive, 30%);
+				color: white;
+			}
+		}
+	}
+
 	p.nodelegend.active {
 		span.nodesigla {
-			background-color: #F95738;
+			background-color: $docColorActive;
 			color: white;
 		}
 	}
 }
 
+#legend-info {
+	display: none;
+	transition: all ease-in 0.5s;
+	opacity: 0;
+
+	&.active {
+		display: block;
+		opacity: 1;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.taxCount {
+		span {
+			display: inline-block;
+			background-color: $docColor;
+			border-radius: 5px;
+			border: 1px solid #333;
+			width: 15px;
+			height: 15px;
+			margin-right: 6px;
+			
+			&:nth-child(2) {
+				width: 20px;
+				height: 20px;
+			}
+
+			&:nth-child(3) {
+				width: 25px;
+				height: 25px;
+			}
+
+			&:nth-child(4) {
+				width: 30px;
+				height: 30px;
+			}
+
+			&:nth-child(5) {
+				width: 35px;
+				height: 35px;
+			}
+		}
+	}
+
+	.docdesc {
+		margin-bottom: 0;
+		font-size: 14px;
+		span {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			margin-right: 10px;
+			&.has {
+				background-color: #555;
+			}
+			&.hasnot {
+				background-color: #ccc;
+			}
+		}
+	}
+}
+
 #node-info {
+	position: relative;
+	opacity: 0;
+	display: none;
+	transition: all ease-in 0.5s;
+	
+	&.active {
+		display: block;
+		opacity: 1;
+	}
+
 	h2 {
 		margin: 12px 0 0 0;
+		padding-top: 36px;
 		font-size: 18px;
 		font-style: italic;
 	}
@@ -98,6 +188,22 @@
 		padding: 6px 12px;
 	}
 
+	span#closeInfo {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 14px;
+		color: #333;
+		cursor: pointer;
+		text-transform: uppercase;
+		border: 1px solid #333;
+		border-radius: 10px;
+		padding: 3px 12px;
+		&:hover {
+			background-color: #f0f0f0;
+		}
+	}
 
 }
 
@@ -105,4 +211,29 @@
 	margin-top: 6px;
 	padding-top: 6px;
 	border-top: 1px solid #ccc;
+}
+
+#ctcicy_ui {
+	.zoom {
+		margin: 12px 0;
+		span {
+			display: inline-block;
+			width: 46px;
+			text-align: center;
+			font-size: 24px;
+			line-height: 24px;
+			font-family: sans-serif;
+			padding: 3px 6px;
+			font-weight: bold;
+			background-color: white;
+			border: 1px solid #333;
+			border-radius: 10px;
+			margin-right: 6px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #f0f0f0;
+			}
+		}
+	}
 }
