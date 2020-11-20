@@ -83,6 +83,10 @@ $docColorActive: #F95738;
 
 	h3 {
 		font-size: 16px;
+		&.legendsection {
+			padding-top: 12px;
+			border-top: 1px solid #ccc;
+		}
 	}
 
 	.taxCount {
@@ -235,5 +239,12 @@ $docColorActive: #F95738;
 				background-color: #f0f0f0;
 			}
 		}
+	}
+
+	#ctcicy_reset {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		border-radius: 5px;
 	}
 }
