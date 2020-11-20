@@ -136,7 +136,17 @@ $docColorActive: #F95738;
 			&.hasnot {
 				background-color: #ccc;
 			}
+
+			&.miniterm {
+				display: inline;
+				width: auto;
+				height: auto;
+				background-color: transparent;
+				margin: 0;
+			}
 		}
+
+
 	}
 }
 
